@@ -24,3 +24,4347 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ROYAL GANESH OPENING */
+.ganesh-opening {
+  --royal-gold: #b98736;
+  --deep-gold: #80531d;
+  --ivory: #fff8e9;
+  position: relative;
+  min-height: 100svh;
+  width: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #80531d;
+  background:
+    radial-gradient(ellipse at 50% 43%, #fffdf4 0%, #f9efd9 48%, #ead7b5 100%);
+}
+
+.ganesh-grain {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .16;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E");
+}
+
+.ganesh-aura {
+  position: absolute;
+  width: min(85vw, 720px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e6bd6b36, #d9ad4b10 45%, transparent 70%);
+  filter: blur(12px);
+  z-index: -1;
+  animation: aura-pulse 5s ease-in-out infinite;
+}
+
+@keyframes aura-pulse {
+  0%, 100% { transform: scale(.94); opacity: .65; }
+  50% { transform: scale(1.08); opacity: 1; }
+}
+
+.ganesh-frame {
+  width: min(100%, 1000px);
+  min-height: 100svh;
+  padding: 35px 24px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.ganesh-top-ornament {
+  font-size: 43px;
+  color: var(--royal-gold);
+  text-shadow: 0 0 25px #d5a74c80;
+  line-height: 1;
+}
+
+.ganesh-eyebrow {
+  margin-top: 17px;
+  color: #9b733a;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.ganesh-illustration-wrap {
+  width: min(75vw, 440px);
+  position: relative;
+  margin-top: 4px;
+  filter: drop-shadow(0 15px 25px #9c6b2630);
+}
+
+.ganesh-artwork {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.ganesh-mandala {
+  transform-origin: 220px 240px;
+  animation: mandala-breathe 7s ease-in-out infinite;
+}
+
+@keyframes mandala-breathe {
+  0%, 100% { opacity: .65; }
+  50% { opacity: 1; }
+}
+
+.ganesh-halo {
+  position: absolute;
+  inset: 5%;
+  border: 1px solid #c99b4d65;
+  border-radius: 50%;
+  box-shadow:
+    0 0 35px #d9b25b30,
+    inset 0 0 35px #d9b25b20;
+}
+
+.ganesh-mantra {
+  margin-top: -4px;
+  z-index: 3;
+  color: #8c5b25;
+}
+
+.ganesh-mantra h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(23px, 5vw, 37px);
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #956629;
+  text-shadow: 0 2px 12px #d8b36b55;
+  margin: 13px 0;
+}
+
+.ganesh-mantra p {
+  font-size: 9px;
+  letter-spacing: 5px;
+  color: #a88b5d;
+  margin: 12px 0;
+}
+
+.mantra-line {
+  display: block;
+  width: 130px;
+  height: 1px;
+  margin: auto;
+  background: linear-gradient(90deg, transparent, #bd934b, transparent);
+}
+
+.flower-rain,
+.ganesh-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.flower-petal {
+  position: absolute;
+  top: 0;
+  display: block;
+  border-radius: 80% 10% 80% 10%;
+  box-shadow: 0 1px 4px #98602b22;
+}
+
+.petal-0 { background: linear-gradient(135deg, #f9c75c, #e98b18); }
+.petal-1 { background: linear-gradient(135deg, #f7e6c6, #dba8a0); }
+.petal-2 { background: linear-gradient(135deg, #e7a5a3, #a72b43); }
+.petal-3 { background: linear-gradient(135deg, #ffdc82, #d88926); }
+
+.gold-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #c18b35;
+  box-shadow: 0 0 9px 2px #d6aa5b70;
+}
+
+.ganesh-diya {
+  position: absolute;
+  bottom: 25%;
+  width: 45px;
+  height: 40px;
+  z-index: 4;
+}
+
+.ganesh-diya.left { left: 13%; }
+.ganesh-diya.right { right: 13%; }
+
+.diya-bowl {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  width: 35px;
+  height: 17px;
+  border-radius: 10% 10% 60% 60%;
+  background: linear-gradient(#e7bd6a, #9b5e1b);
+  box-shadow: 0 0 12px #dc9d3980;
+}
+
+.diya-flame {
+  position: absolute;
+  left: 17px;
+  bottom: 13px;
+  width: 12px;
+  height: 23px;
+  border-radius: 80% 0 80% 80%;
+  background: linear-gradient(45deg, #e77917, #fff3a5, #f5a72b);
+  transform-origin: bottom center;
+  box-shadow: 0 0 18px 5px #f0a62a60;
+}
+
+.diya-glow {
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: #e7a63b20;
+  filter: blur(15px);
+}
+
+.ganesh-scroll {
+  position: absolute;
+  bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  color: #a18454;
+  font-size: 8px;
+  letter-spacing: 2px;
+  z-index: 6;
+}
+
+@media (max-width: 600px) {
+  .ganesh-frame { padding: 24px 15px 65px; }
+  .ganesh-illustration-wrap { width: min(88vw, 380px); }
+  .ganesh-diya { bottom: 24%; transform: scale(.75); }
+  .ganesh-diya.left { left: 3%; }
+  .ganesh-diya.right { right: 3%; }
+  .ganesh-eyebrow { font-size: 8px; }
+  .ganesh-mantra p { letter-spacing: 3px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ganesh-opening *,
+  .ganesh-opening *::before,
+  .ganesh-opening *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ORIGINAL GANESH IMAGE */
+.ganesh-image-wrap {
+  width: 100%;
+  height: 560px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.ganesh-original-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .ganesh-image-wrap {
+    height: min(115vw, 560px);
+  }
+}
+
+
+/* DIVINE INTRO LOADER */
+.divine-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at center, #fffdf4 0%, #f9efd9 48%, #ead7b5 100%);
+  color: #936126;
+  transition: opacity .5s ease, visibility .5s ease;
+}
+
+.divine-loader.loader-fade {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-om {
+  position: relative;
+  z-index: 2;
+  font-family: serif;
+  font-size: clamp(85px, 18vw, 145px);
+  line-height: 1.2;
+  color: #B47B2F;
+  text-shadow: 0 0 25px #D6A64F80, 0 0 65px #E7C77C80;
+}
+
+.loader-mandala {
+  position: absolute;
+  font-size: clamp(260px, 70vw, 510px);
+  color: #C69B5B22;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.divine-loader h1 {
+  z-index: 2;
+  margin-top: 15px;
+  font-family: Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(23px, 5vw, 39px);
+  color: #925A28;
+  text-align: center;
+}
+
+.divine-loader p {
+  z-index: 2;
+  margin-top: 17px;
+  font-size: 13px;
+  letter-spacing: 7px;
+  color: #B18345;
+}
+
+.loader-progress {
+  width: 145px;
+  height: 2px;
+  margin-top: 35px;
+  overflow: hidden;
+  background: #DCC49A;
+}
+
+.loader-progress span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: #A66F2B;
+  transform-origin: left;
+  animation: loader-progress 2.8s ease-in-out forwards;
+}
+
+@keyframes loader-progress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+.loader-caption {
+  z-index: 2;
+  margin-top: 15px;
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: #A98A5A;
+}
+
+
+/* KEEP GANESH SCENE HIDDEN UNTIL LOADER COMPLETES */
+.ganesh-opening.loader-active > :not(.divine-loader) {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.ganesh-opening.loader-active .divine-loader {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+/* ROYAL GANESH ENHANCEMENTS */
+.ganesh-illustration-wrap {
+  isolation: isolate;
+}
+
+.ganesh-mandala-ring {
+  position: absolute;
+  inset: -5%;
+  z-index: 0;
+  border-radius: 50%;
+  background:
+    repeating-conic-gradient(from 0deg, #bd91452b 0deg 1deg, transparent 1deg 9deg);
+  -webkit-mask: radial-gradient(circle, transparent 53%, #000 54%, #000 57%, transparent 58%);
+  mask: radial-gradient(circle, transparent 53%, #000 54%, #000 57%, transparent 58%);
+  pointer-events: none;
+}
+
+.ganesh-rays {
+  position: absolute;
+  inset: -18%;
+  z-index: 0;
+  border-radius: 50%;
+  background: repeating-conic-gradient(from 0deg, #e8bd6b16 0deg 7deg, transparent 7deg 18deg);
+  -webkit-mask: radial-gradient(circle, #000 0%, transparent 70%);
+  mask: radial-gradient(circle, #000 0%, transparent 70%);
+  animation: divine-rays 14s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes divine-rays {
+  0%, 100% { opacity: .35; transform: scale(.96) rotate(-5deg); }
+  50% { opacity: .8; transform: scale(1.04) rotate(5deg); }
+}
+
+.ganesh-halo {
+  z-index: 1;
+  background: radial-gradient(circle, #e8c77b12 0%, transparent 68%);
+  box-shadow: 0 0 55px #d9b25b25, inset 0 0 35px #d9b25b18;
+}
+
+.ganesh-original-image {
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 12px 22px #8e612b20);
+}
+
+.royal-frame-corners {
+  position: absolute;
+  inset: 18px;
+  z-index: 0;
+  pointer-events: none;
+  border: 1px solid #bd93452b;
+}
+
+.royal-frame-corners span {
+  position: absolute;
+  color: #b98736;
+  font-size: 23px;
+  text-shadow: 0 0 12px #d7b66b70;
+  animation: corner-glow 4s ease-in-out infinite;
+}
+
+.royal-frame-corners span:nth-child(1) { top: -12px; left: -8px; }
+.royal-frame-corners span:nth-child(2) { top: -12px; right: -8px; }
+.royal-frame-corners span:nth-child(3) { bottom: -12px; left: -8px; }
+.royal-frame-corners span:nth-child(4) { bottom: -12px; right: -8px; }
+
+@keyframes corner-glow {
+  0%, 100% { opacity: .45; }
+  50% { opacity: 1; }
+}
+
+.ganesh-mantra h1 {
+  animation: mantra-shimmer 5s ease-in-out infinite;
+}
+
+@keyframes mantra-shimmer {
+  0%, 100% { text-shadow: 0 2px 12px #d8b36b40; }
+  50% { text-shadow: 0 0 7px #fff1bd, 0 2px 22px #c18b3580; }
+}
+
+@media (max-width: 600px) {
+  .royal-frame-corners { inset: 10px; }
+  .ganesh-mandala-ring { inset: -2%; }
+}
+
+
+/* TEMPLE BELLS AND FLORAL WEDDING DECOR */
+.floral-toran {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92%, 850px);
+  display: flex;
+  justify-content: space-around;
+  color: #b98736;
+  font-size: clamp(15px, 2vw, 23px);
+  opacity: .72;
+  pointer-events: none;
+  z-index: 7;
+  text-shadow: 0 2px 8px #d9a84d70;
+}
+
+.floral-toran span:nth-child(odd) {
+  color: #bd8050;
+  transform: translateY(9px);
+}
+
+.floral-toran span:nth-child(3n) {
+  color: #a9a05e;
+  transform: translateY(17px);
+}
+
+.temple-bells {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7%;
+  pointer-events: none;
+  z-index: 7;
+}
+
+.temple-bells span {
+  display: inline-block;
+  color: #b98736;
+  font-family: Georgia, serif;
+  font-size: 34px;
+  transform-origin: top center;
+  text-shadow: 0 3px 12px #d7aa5b80;
+}
+
+.lotus-rangoli {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  color: #b98736;
+  opacity: .7;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.lotus-rangoli span {
+  font-size: 49px;
+  line-height: 1;
+  text-shadow: 0 0 15px #d6aa5b60;
+  animation: lotus-glow 5s ease-in-out infinite;
+}
+
+.lotus-rangoli i {
+  position: absolute;
+  font-style: normal;
+  font-size: 17px;
+  color: #d29b48;
+}
+
+@keyframes lotus-glow {
+  0%, 100% { transform: scale(.94); opacity: .65; }
+  50% { transform: scale(1.06); opacity: 1; }
+}
+
+.flower-rain {
+  z-index: 8;
+}
+
+.flower-petal {
+  filter: drop-shadow(0 2px 3px #9b612b35);
+}
+
+@media (max-width: 600px) {
+  .temple-bells { top: 18px; padding: 0 5%; }
+  .temple-bells span { font-size: 27px; }
+  .floral-toran { font-size: 14px; }
+  .lotus-rangoli { bottom: 28px; }
+}
+
+/* Blend Ganesh image background with the page */
+.ganesh-original-image {
+  mix-blend-mode: multiply;
+}
+
+/* SCENE 02 — WEDDING INVITATION */
+.invitation-scene {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 90px 22px;
+  background:
+    radial-gradient(ellipse at 50% 45%, #fffdf5 0%, #f8efdE 58%, #ead9bb 100%);
+  color: #80572d;
+}
+
+.invitation-frame {
+  position: relative;
+  width: min(100%, 760px);
+  padding: clamp(45px, 8vw, 85px) clamp(22px, 7vw, 75px);
+  text-align: center;
+  border: 1px solid #bd93456b;
+  outline: 1px solid #bd93452b;
+  outline-offset: 9px;
+  background: #fffdf45c;
+  box-shadow: 0 20px 70px #89652b12;
+}
+
+.invitation-ornament {
+  color: #b58a43;
+  font-size: 25px;
+  letter-spacing: 12px;
+}
+
+.invitation-eyebrow,
+.invitation-footer {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  line-height: 1.9;
+  color: #9c7946;
+}
+
+.invitation-eyebrow {
+  margin-top: 28px;
+}
+
+.invitation-heading {
+  margin: 20px 0;
+  font-family: Georgia, serif;
+  font-size: clamp(27px, 5vw, 43px);
+  font-weight: 400;
+  color: #8d632f;
+}
+
+.invitation-intro {
+  max-width: 470px;
+  margin: 0 auto;
+  font-family: Georgia, serif;
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: 1.9;
+  color: #806c53;
+}
+
+.invitation-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  margin: 34px auto 25px;
+  color: #b58a43;
+}
+
+.invitation-divider span {
+  width: 75px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #bd9345);
+}
+
+.invitation-divider span:last-child {
+  transform: rotate(180deg);
+}
+
+.invitation-divider i {
+  font-size: 25px;
+  font-style: normal;
+}
+
+.invitation-name {
+  margin: 0;
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: clamp(65px, 12vw, 105px);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #9b7139;
+  text-shadow: 0 5px 25px #c49a5520;
+}
+
+.invitation-name-first {
+  margin-top: 5px;
+}
+
+.invitation-and {
+  display: block;
+  margin: 7px 0;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-style: italic;
+  color: #bd8050;
+}
+
+.invitation-footer {
+  margin-top: 34px;
+}
+
+.invitation-bottom-ornament {
+  margin-top: 38px;
+}
+
+@media (max-width: 600px) {
+  .invitation-scene {
+    min-height: 90svh;
+    padding: 65px 22px;
+  }
+
+  .invitation-frame {
+    padding: 45px 20px;
+  }
+
+  .invitation-eyebrow,
+  .invitation-footer {
+    font-size: 8px;
+    letter-spacing: 2.5px;
+  }
+
+  .invitation-intro {
+    font-size: 15px;
+  }
+}
+
+/* WEDDING COUPLE ARTWORK */
+.wedding-couple-art {
+  width: min(100%, 460px);
+  margin: 30px auto;
+  overflow: hidden;
+  border: 1px solid #bd93455c;
+  box-shadow: 0 16px 45px #67401f20;
+  line-height: 0;
+}
+
+.wedding-couple-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .wedding-couple-art {
+    width: min(100%, 390px);
+    margin: 24px auto;
+  }
+}
+
+.ganesh-scroll-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 18px;
+}
+
+.ganesh-scroll-link:focus-visible {
+  outline: 2px solid #b98736;
+  outline-offset: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#invitation {
+  scroll-margin-top: 12px;
+}
+
+/* CINEMATIC WEDDING NAME REVEAL */
+.invitation-scene {
+  min-height: 100svh;
+  padding: 65px 18px 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 0;
+  background: radial-gradient(ellipse at 50% 48%, #fffdf5 0%, #f8efdE 58%, #ead9bb 100%);
+}
+
+.invitation-frame {
+  display: contents;
+}
+
+.invitation-atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, #e7c77b35, transparent 65%);
+}
+
+.celebration-title {
+  text-align: center;
+  z-index: 2;
+}
+
+.celebration-title span,
+.couple-name-reveal > span {
+  color: #a98243;
+  font: 600 9px Arial, sans-serif;
+  letter-spacing: 5px;
+}
+
+.celebration-title h2 {
+  margin: 15px 0 9px;
+  color: #89602f;
+  font: 400 clamp(30px, 5vw, 48px) Georgia, serif;
+}
+
+.celebration-title i {
+  color: #9a8060;
+  font: italic 15px Georgia, serif;
+}
+
+.couple-transparent-art {
+  width: min(94vw, 540px);
+  margin: -4px auto -12px;
+  position: relative;
+  z-index: 1;
+  line-height: 0;
+  filter: drop-shadow(0 15px 28px #8d622b20);
+}
+
+.couple-transparent-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.couple-name-reveal {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.couple-name-reveal h1 {
+  margin: 9px 0 12px;
+  color: #966b35;
+  font: 400 clamp(54px, 10vw, 88px) "Times New Roman", Georgia, serif;
+  text-shadow: 0 5px 25px #c49a5525;
+}
+
+.couple-name-reveal h1 i {
+  color: #bd8050;
+  font-size: .65em;
+  font-weight: 400;
+}
+
+.couple-name-reveal p {
+  color: #9c7946;
+  font: 600 10px Arial, sans-serif;
+  letter-spacing: 5px;
+}
+
+.couple-name-reveal > div {
+  margin-top: 20px;
+  color: #b58a43;
+  font-size: 22px;
+  letter-spacing: 8px;
+}
+
+@media (max-width: 600px) {
+  .invitation-scene { padding: 55px 14px 45px; }
+  .celebration-title span { letter-spacing: 3px; }
+  .couple-transparent-art { width: min(96vw, 430px); }
+  .couple-name-reveal p { letter-spacing: 3px; }
+}
+
+.couple-transparent-art {
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+.couple-transparent-art {
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+.couple-transparent-art img {
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+/* COMPLETE WEDDING INVITATION POSTER */
+.invitation-poster-scene {
+  min-height: 100svh;
+  padding: 24px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #fffdf5, #f8efde 70%, #ead9bb);
+  overflow: hidden;
+}
+
+.invitation-poster {
+  width: min(100%, 760px);
+  line-height: 0;
+  box-shadow: 0 18px 55px #80602c20;
+}
+
+.invitation-poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .invitation-poster-scene {
+    padding: 12px 8px;
+  }
+}
+
+/* SCENE 02 — ROYAL WEDDING CELEBRATION */
+.wedding-scene {
+  min-height: 100svh;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(ellipse at 50% 42%, #fffdf5 0%, #f9f0df 55%, #ead8b7 100%);
+  color: #91652f;
+}
+
+.wedding-grain {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .16;
+  pointer-events: none;
+  background-image: radial-gradient(#b88a4638 .7px, transparent .7px);
+  background-size: 7px 7px;
+}
+
+.wedding-aura {
+  position: absolute;
+  z-index: -1;
+  width: min(90vw, 650px);
+  aspect-ratio: 1;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, #e9c77932, transparent 68%);
+  pointer-events: none;
+}
+
+.wedding-content {
+  width: 100%;
+  max-width: 850px;
+  min-height: 100svh;
+  padding: 52px 18px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.wedding-heading span,
+.wedding-names > span {
+  font: 600 10px Arial, sans-serif;
+  letter-spacing: 6px;
+  color: #a27a40;
+}
+
+.wedding-heading h2 {
+  margin: 15px 0 10px;
+  font: 400 clamp(29px, 5vw, 43px) Georgia, serif;
+  color: #93672f;
+}
+
+.wedding-heading p {
+  font: 600 9px Arial, sans-serif;
+  letter-spacing: 4px;
+  color: #a88a60;
+}
+
+.wedding-artwork {
+  width: min(88vw, 430px);
+  margin: 12px auto 0;
+  line-height: 0;
+  filter: drop-shadow(0 12px 22px #8e612b18);
+}
+
+.wedding-artwork img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.wedding-names {
+  margin-top: -2px;
+  position: relative;
+  z-index: 3;
+}
+
+.wedding-names h1 {
+  margin: 8px 0;
+  color: #94682f;
+  font: 400 clamp(57px, 10vw, 88px) "Times New Roman", Georgia, serif;
+  line-height: 1.05;
+  text-shadow: 0 5px 20px #c49a5520;
+}
+
+.wedding-names h1 i {
+  color: #b77a51;
+  font-weight: 400;
+}
+
+.wedding-name-divider {
+  margin: 10px 0;
+  color: #b58a43;
+  font-size: 22px;
+  letter-spacing: 8px;
+}
+
+.wedding-date {
+  margin: 12px 0;
+  font: 600 11px Arial, sans-serif;
+  letter-spacing: 5px;
+  color: #9d743d;
+}
+
+.wedding-message {
+  margin: 12px 0;
+  font: italic 16px Georgia, serif;
+  color: #927c60;
+}
+
+.wedding-bottom {
+  margin-top: auto;
+  padding-top: 25px;
+  color: #a17b45;
+  font: 600 9px Arial, sans-serif;
+  letter-spacing: 4px;
+}
+
+.wedding-bottom div {
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.wedding-petals {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.wedding-petal {
+  position: absolute;
+  top: -20px;
+  width: 11px;
+  height: 18px;
+  border-radius: 80% 10% 80% 10%;
+  background: #e6ae57;
+  filter: drop-shadow(0 2px 3px #9b612b25);
+}
+
+.wedding-petal.petal-1 {
+  background: #d78b91;
+}
+
+.wedding-petal.petal-2 {
+  background: #edcf9a;
+}
+
+@media (max-width: 600px) {
+  .wedding-content {
+    padding: 43px 12px 24px;
+  }
+
+  .wedding-heading span,
+  .wedding-names > span {
+    letter-spacing: 4px;
+    font-size: 9px;
+  }
+
+  .wedding-heading p {
+    letter-spacing: 2.5px;
+  }
+
+  .wedding-artwork {
+    width: min(92vw, 390px);
+    margin-top: 10px;
+  }
+
+  .wedding-names h1 {
+    font-size: clamp(55px, 12vw, 76px);
+  }
+
+  .wedding-date {
+    letter-spacing: 3px;
+  }
+
+  .wedding-message {
+    font-size: 14px;
+  }
+}
+
+/* IMAGE-FREE ROYAL WEDDING CELEBRATION */
+.wedding-scene {
+  min-height: 100svh;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(ellipse at 50% 45%, #fffdf5 0%, #f9f0df 55%, #ead8b7 100%);
+  color: #91652f;
+}
+
+.wedding-content {
+  width: 100%;
+  max-width: 760px;
+  min-height: 100svh;
+  padding: 48px 20px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.wedding-grain {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .18;
+  pointer-events: none;
+  background-image: radial-gradient(#b88a4638 .7px, transparent .7px);
+  background-size: 7px 7px;
+}
+
+.wedding-aura {
+  position: absolute;
+  width: min(90vw, 650px);
+  aspect-ratio: 1;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, #e9c77935, transparent 68%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.wedding-corner {
+  position: absolute;
+  color: #b58a43;
+  font-size: 34px;
+  z-index: 3;
+  opacity: .8;
+}
+.wedding-corner-tl { top: 20px; left: 22px; }
+.wedding-corner-tr { top: 20px; right: 22px; }
+.wedding-corner-bl { bottom: 20px; left: 22px; }
+.wedding-corner-br { bottom: 20px; right: 22px; }
+
+.wedding-top-floral {
+  color: #b88a48;
+  font-size: clamp(18px, 4vw, 27px);
+  letter-spacing: 7px;
+  margin-bottom: 30px;
+  text-shadow: 0 3px 12px #d9b66c45;
+}
+
+.wedding-heading span,
+.wedding-names > span {
+  color: #a27a40;
+  font: 600 10px Arial, sans-serif;
+  letter-spacing: 6px;
+}
+
+.wedding-heading h2 {
+  margin: 15px 0 10px;
+  font: 400 clamp(30px, 5vw, 43px) Georgia, serif;
+  color: #93672f;
+}
+
+.wedding-heading p {
+  font: 600 9px Arial, sans-serif;
+  letter-spacing: 4px;
+  color: #a88a60;
+}
+
+.wedding-mandap-decoration {
+  width: min(76vw, 410px);
+  height: 125px;
+  position: relative;
+  margin: 30px auto 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.mandap-arch {
+  position: absolute;
+  inset: 0 0 8px;
+  border: 2px solid #bd93456b;
+  border-bottom: 0;
+  border-radius: 180px 180px 0 0;
+  background: linear-gradient(180deg, #f2dfb74a, #fff8e900);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 17px;
+}
+
+.mandap-flower {
+  color: #bd8050;
+  font-size: 29px;
+}
+
+.mandap-leaves {
+  color: #a98a52;
+  font-size: 37px;
+  transform: rotate(180deg);
+}
+
+.mandap-lotus {
+  position: absolute;
+  bottom: 0;
+  color: #bd9345;
+  font-size: 46px;
+  text-shadow: 0 0 18px #d6aa5b50;
+}
+
+.mandap-line {
+  position: absolute;
+  bottom: 4px;
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #bd9345, transparent);
+}
+
+.wedding-names {
+  position: relative;
+  z-index: 3;
+}
+
+.wedding-names h1 {
+  margin: 8px 0;
+  color: #94682f;
+  font: 400 clamp(68px, 13vw, 105px) "Times New Roman", Georgia, serif;
+  line-height: .98;
+  text-shadow: 0 5px 20px #c49a5520;
+}
+
+.wedding-and {
+  margin: 2px 0;
+  color: #bd8050;
+  font: italic 38px Georgia, serif;
+}
+
+.wedding-name-divider {
+  margin: 15px 0;
+  color: #b58a43;
+  font-size: 23px;
+  letter-spacing: 8px;
+}
+
+.wedding-date {
+  margin: 15px 0;
+  color: #9d743d;
+  font: 600 11px Arial, sans-serif;
+  letter-spacing: 5px;
+}
+
+.wedding-message {
+  margin: 12px 0;
+  color: #927c60;
+  font: italic 17px Georgia, serif;
+}
+
+.wedding-invitation-line {
+  max-width: 400px;
+  margin: 14px auto;
+  color: #927c60;
+  font: 15px/1.8 Georgia, serif;
+}
+
+.wedding-bottom {
+  margin-top: auto;
+  padding-top: 25px;
+  color: #a17b45;
+  font: 600 9px Arial, sans-serif;
+  letter-spacing: 4px;
+}
+
+.wedding-bottom div {
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.wedding-petals {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.wedding-petal {
+  position: absolute;
+  top: -20px;
+  border-radius: 80% 10% 80% 10%;
+  background: #e6ae57;
+  filter: drop-shadow(0 2px 3px #9b612b25);
+}
+
+.wedding-petal.petal-1 { background: #d78b91; }
+.wedding-petal.petal-2 { background: #edcf9a; }
+
+@media (max-width: 600px) {
+  .wedding-content { padding: 42px 14px 25px; }
+  .wedding-top-floral { margin-bottom: 24px; }
+  .wedding-heading span,
+  .wedding-names > span { letter-spacing: 4px; font-size: 9px; }
+  .wedding-heading p { letter-spacing: 2px; }
+  .wedding-mandap-decoration { height: 105px; margin-top: 24px; }
+  .wedding-names h1 { font-size: clamp(65px, 15vw, 86px); }
+  .wedding-date { letter-spacing: 3px; }
+  .wedding-message { font-size: 15px; }
+  .wedding-invitation-line { font-size: 14px; }
+}
+
+/* SIGNATURE ROYAL NAME EFFECT */
+.wedding-names {
+  position: relative;
+  isolation: isolate;
+  padding: 12px 22px;
+}
+
+.wedding-names h1 {
+  font-family: "Bodoni 72", "Didot", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -2px;
+  background: linear-gradient(
+    110deg,
+    #8c5b25 5%,
+    #d5ad62 25%,
+    #fff0bd 42%,
+    #a36d30 57%,
+    #e4c17c 76%,
+    #8c5b25 95%
+  );
+  background-size: 220% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 5px 12px #b8894430);
+  animation: royal-name-shimmer 7s ease-in-out infinite;
+}
+
+.wedding-names h1:first-of-type {
+  animation-delay: 0s;
+}
+
+.wedding-names h1:last-of-type {
+  animation-delay: 1.2s;
+}
+
+.wedding-and {
+  font-family: "Bodoni 72", Didot, Georgia, serif;
+  font-size: 43px;
+  font-style: italic;
+  color: #bd8050;
+  text-shadow: 0 0 18px #d6a65b65;
+  animation: ampersand-glow 3s ease-in-out infinite;
+}
+
+.wedding-names::before,
+.wedding-names::after {
+  content: "✧";
+  position: absolute;
+  top: 42%;
+  color: #c49a51;
+  font-size: 22px;
+  opacity: .65;
+  animation: name-sparkle 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.wedding-names::before {
+  left: -8px;
+}
+
+.wedding-names::after {
+  right: -8px;
+  animation-delay: 1.5s;
+}
+
+.wedding-name-divider {
+  animation: divider-glow 4s ease-in-out infinite;
+}
+
+@keyframes royal-name-shimmer {
+  0%, 100% {
+    background-position: 100% center;
+    filter: drop-shadow(0 5px 12px #b8894430);
+  }
+  50% {
+    background-position: 0% center;
+    filter: drop-shadow(0 5px 22px #d5ad6270);
+  }
+}
+
+@keyframes ampersand-glow {
+  0%, 100% { transform: scale(1); opacity: .8; }
+  50% { transform: scale(1.13); opacity: 1; }
+}
+
+@keyframes name-sparkle {
+  0%, 100% { transform: scale(.65) rotate(0deg); opacity: .3; }
+  50% { transform: scale(1.3) rotate(45deg); opacity: 1; }
+}
+
+@keyframes divider-glow {
+  0%, 100% { opacity: .65; text-shadow: 0 0 4px #d6aa5b30; }
+  50% { opacity: 1; text-shadow: 0 0 18px #d6aa5b90; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wedding-names h1,
+  .wedding-and,
+  .wedding-names::before,
+  .wedding-names::after,
+  .wedding-name-divider {
+    animation: none !important;
+  }
+}
+
+/* PREMIUM WEDDING CELEBRATION EFFECTS */
+
+/* 1. Moving golden light sweep */
+.wedding-scene::before {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 40%,
+    #fff4c51c 47%,
+    #d6ad6238 50%,
+    #fff4c51c 53%,
+    transparent 60%
+  );
+  transform: translateX(-65%) rotate(0deg);
+  animation: wedding-light-sweep 12s ease-in-out infinite;
+}
+
+@keyframes wedding-light-sweep {
+  0%, 35% { transform: translateX(-65%); }
+  75%, 100% { transform: translateX(65%); }
+}
+
+/* 2. Animated floral corners */
+.wedding-corner {
+  text-shadow: 0 0 12px #d6aa5b55;
+  animation: floral-corner-glow 5s ease-in-out infinite;
+}
+
+.wedding-corner-tr { animation-delay: 1s; }
+.wedding-corner-bl { animation-delay: 2s; }
+.wedding-corner-br { animation-delay: 3s; }
+
+@keyframes floral-corner-glow {
+  0%, 100% { opacity: .55; transform: scale(.9) rotate(-8deg); }
+  50% { opacity: 1; transform: scale(1.12) rotate(8deg); }
+}
+
+/* 3. Golden dust particles */
+.wedding-scene::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: .55;
+  background-image:
+    radial-gradient(circle, #c99c4d 1px, transparent 1.8px),
+    radial-gradient(circle, #e6c47e 1px, transparent 2px),
+    radial-gradient(circle, #bd8050 1px, transparent 1.8px);
+  background-size: 113px 137px, 173px 191px, 227px 163px;
+  background-position: 10px 20px, 60px 80px, 100px 40px;
+  animation: golden-dust-drift 24s linear infinite;
+}
+
+@keyframes golden-dust-drift {
+  from { background-position: 10px 20px, 60px 80px, 100px 40px; }
+  to { background-position: 123px -117px, -113px -111px, 327px -123px; }
+}
+
+/* 4. Subtle mandala behind the floral arch */
+.wedding-mandap-decoration {
+  isolation: isolate;
+}
+
+.wedding-mandap-decoration::before {
+  content: "✺";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #bd934526;
+  font-size: 150px;
+  line-height: 1;
+  animation: wedding-mandala-turn 90s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes wedding-mandala-turn {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* 5. Sequential signature name entrance */
+.wedding-names h1:first-of-type {
+  animation:
+    signature-reveal 1.7s ease-out both,
+    royal-name-shimmer 7s ease-in-out 1.7s infinite;
+}
+
+.wedding-names h1:last-of-type {
+  animation:
+    signature-reveal 1.7s ease-out .7s both,
+    royal-name-shimmer 7s ease-in-out 2.4s infinite;
+}
+
+@keyframes signature-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wedding-scene::before,
+  .wedding-scene::after,
+  .wedding-corner,
+  .wedding-mandap-decoration::before,
+  .wedding-names h1 {
+    animation: none !important;
+  }
+}
+
+.wedding-blessing {
+  margin: 0 auto 22px;
+  max-width: 620px;
+  text-align: center;
+  color: #9b7547;
+  position: relative;
+  z-index: 2;
+}
+
+.wedding-blessing span,
+.wedding-blessing-footer {
+  display: block;
+  color: #a4773e;
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.wedding-blessing p {
+  margin-top: 9px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.wedding-blessing-footer {
+  margin: 22px 0 12px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.wedding-countdown {
+  position: relative;
+  z-index: 2;
+  width: min(92%, 440px);
+  margin: 18px auto 28px;
+  text-align: center;
+  color: #a4773e;
+}
+
+.countdown-heading {
+  display: block;
+  margin-bottom: 13px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.countdown-unit strong {
+  font-family: Georgia, serif;
+  font-size: clamp(25px, 6vw, 36px);
+  line-height: 1;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  color: #98672f;
+}
+
+.countdown-unit span {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #a98960;
+}
+
+.countdown-date {
+  margin-top: 17px;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #98672f;
+}
+
+@media (max-width: 380px) {
+  .countdown-grid { gap: 4px; }
+  .countdown-unit span { font-size: 8px; letter-spacing: 1px; }
+}
+
+/* SCENE 03 — WEDDING CELEBRATIONS */
+.celebration-scene {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 100px 22px 85px;
+  color: #92704a;
+  background:
+    radial-gradient(ellipse at 50% 10%, #fff9e9 0%, transparent 55%),
+    linear-gradient(145deg, #f8eedb, #f5e8d0 52%, #fbf2df);
+}
+
+.celebration-grain {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: .25;
+  background-image: radial-gradient(#b9945e 0.7px, transparent 0.8px);
+  background-size: 15px 15px;
+}
+
+.celebration-inner {
+  width: min(100%, 940px);
+  margin: 0 auto;
+}
+
+.celebration-intro {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.celebration-eyebrow {
+  color: #a77a3e;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.celebration-floral {
+  margin: 20px 0 12px;
+  color: #bd9253;
+  font-size: 24px;
+}
+
+.celebration-intro h2 {
+  margin: 0;
+  color: #936b3e;
+  font-family: Georgia, serif;
+  font-size: clamp(34px, 6vw, 54px);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.celebration-subtitle {
+  margin: 15px auto 0;
+  max-width: 520px;
+  color: #927d60;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.celebration-divider {
+  margin-top: 24px;
+  color: #b88b4c;
+  letter-spacing: 8px;
+}
+
+.celebration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.celebration-card {
+  position: relative;
+  min-height: 300px;
+  padding: 34px 26px 28px;
+  text-align: center;
+  border: 1px solid #d9bd8b;
+  border-radius: 160px 160px 18px 18px;
+  background: linear-gradient(160deg, #fff9eddd, #f8eddaed);
+  box-shadow: 0 12px 35px #9c74401a, inset 0 0 0 5px #ffffff45;
+}
+
+.celebration-number {
+  position: absolute;
+  top: 22px;
+  left: 24px;
+  color: #c1a276;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.celebration-symbol {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin: 8px auto 17px;
+  border: 1px solid #d6b77f;
+  border-radius: 50%;
+  color: #b48647;
+  font-family: Georgia, serif;
+  font-size: 29px;
+}
+
+.celebration-card h3 {
+  margin: 0;
+  color: #956b3a;
+  font-family: Georgia, serif;
+  font-size: 31px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.celebration-card-subtitle {
+  display: block;
+  margin-top: 9px;
+  color: #b1844d;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.celebration-card p {
+  max-width: 310px;
+  margin: 17px auto;
+  color: #907c60;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.celebration-card-divider {
+  margin: 12px 0;
+  color: #bd9253;
+}
+
+.celebration-tba {
+  color: #a78a64;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.celebration-footer {
+  margin-top: 65px;
+  text-align: center;
+  color: #a47a43;
+}
+
+.celebration-footer > span {
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.celebration-footer p {
+  margin: 12px 0;
+  font-family: Georgia, serif;
+  font-size: 35px;
+  font-style: italic;
+}
+
+.celebration-footer div {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .celebration-scene {
+    padding: 75px 17px 65px;
+  }
+
+  .celebration-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .celebration-card {
+    min-height: 280px;
+    padding: 32px 22px 25px;
+  }
+
+  .celebration-intro {
+    margin-bottom: 35px;
+  }
+}
+
+/* MEHENDI FULL ORIGINAL ARTWORK */
+.mehendi-feature {
+  width: min(100%, 520px);
+  margin: 0 auto 38px;
+  overflow: hidden;
+  border: 1px solid #d9bd8b;
+  border-radius: 220px 220px 18px 18px;
+  background: #fff8e9;
+  box-shadow: 0 14px 40px #9c74401c;
+}
+
+.mehendi-artwork {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.mehendi-artwork img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.mehendi-shlok {
+  position: absolute;
+  top: 29%;
+  left: 5%;
+  width: 90%;
+  color: #80572b;
+  text-align: center;
+  line-height: 1.5;
+  text-shadow: 0 1px 5px #fff9e9;
+}
+
+.mehendi-shlok > span:first-child {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: clamp(13px, 3.5vw, 18px);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.mehendi-shlok h3 {
+  margin: 8px 0 12px;
+  font-family: Georgia, serif;
+  font-size: clamp(19px, 5vw, 27px);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.mehendi-shlok p {
+  margin: 5px 0;
+  font-family: Georgia, serif;
+  font-size: clamp(12px, 3.1vw, 17px);
+  font-weight: 600;
+}
+
+.mehendi-blessing {
+  display: block;
+  margin-top: 12px;
+  font-family: Georgia, serif;
+  font-size: clamp(10px, 2.5vw, 13px);
+  font-style: italic;
+}
+
+.mehendi-caption {
+  padding: 25px 20px 30px;
+  text-align: center;
+  color: #92704a;
+}
+
+.mehendi-caption > span,
+.mehendi-caption small {
+  color: #a77a3e;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.mehendi-caption h3 {
+  margin: 10px 0;
+  color: #956b3a;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.mehendi-caption p {
+  margin: 0 auto 14px;
+  max-width: 340px;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* COMPACT CEREMONY ARTWORK */
+.mehendi-feature {
+  width: min(100%, 410px);
+  margin-bottom: 24px;
+}
+
+.mehendi-artwork {
+  height: 490px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #fff7e9;
+}
+
+.mehendi-artwork img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mehendi-shlok {
+  top: 25%;
+}
+
+.haldi-shlok {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  color: #80572b;
+  line-height: 1.5;
+  text-shadow: 0 1px 6px #fff9e9;
+}
+
+.haldi-shlok > span:first-child {
+  font-family: Georgia, serif;
+  font-size: clamp(12px, 3vw, 16px);
+  font-weight: 600;
+}
+
+.haldi-shlok h3 {
+  margin: 8px 0;
+  font-family: Georgia, serif;
+  font-size: clamp(20px, 5vw, 27px);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.haldi-shlok p {
+  font-family: Georgia, serif;
+  font-size: clamp(11px, 2.8vw, 15px);
+  font-weight: 600;
+}
+
+.haldi-shlok > span:last-child {
+  display: block;
+  margin-top: 9px;
+  font-family: Georgia, serif;
+  font-size: clamp(10px, 2.5vw, 13px);
+  font-style: italic;
+}
+
+.mehendi-caption {
+  padding: 17px 15px 20px;
+}
+
+.mehendi-caption h3 {
+  font-size: 26px;
+}
+
+@media (max-width: 600px) {
+  .mehendi-artwork {
+    height: 430px;
+  }
+}
+
+.ceremony-sanskrit {
+  color: #956b3a;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.9;
+  margin: 12px auto 16px;
+}
+
+/* MEHENDI SHLOKA INSIDE THE EMPTY IMAGE AREA */
+.mehendi-artwork {
+  position: relative;
+  height: auto;
+  display: block;
+}
+
+.mehendi-artwork img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+}
+
+.mehendi-shlok {
+  position: absolute;
+  top: 17%;
+  left: 7%;
+  width: 86%;
+  color: #80572b;
+  text-align: center;
+  line-height: 1.8;
+  text-shadow: 0 1px 5px #fff9e9;
+}
+
+.mehendi-shlok span {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.mehendi-shlok p {
+  margin: 8px 0;
+  font-family: Georgia, serif;
+  font-size: clamp(12px, 2.8vw, 16px);
+  font-weight: 600;
+}
+
+.ceremony-sanskrit {
+  display: none;
+}
+
+.mehendi-shlok {
+  top: 35% !important;
+}
+
+/* COMPACT MEHENDI FRAME */
+.mehendi-feature {
+  width: min(88%, 340px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mehendi-artwork img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+.mehendi-caption {
+  padding: 12px 12px 16px;
+}
+
+.mehendi-caption h3 {
+  font-size: 24px;
+}
+
+/* WEDDING DAY PROGRAMME */
+.wedding-day-program {
+  width: min(100%, 430px);
+  margin: 26px auto 35px;
+  padding: 25px 18px;
+  border: 1px solid #d9bd8b;
+  border-radius: 100px 100px 18px 18px;
+  background: linear-gradient(160deg, #fff9ed, #f8edda);
+  color: #92704a;
+}
+
+.program-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.program-heading > span {
+  color: #a4773e;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.program-heading h2 {
+  margin: 9px 0 6px;
+  color: #956b3a;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.program-heading p {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #a77a3e;
+}
+
+.program-heading div {
+  margin-top: 12px;
+  color: #bd9253;
+  letter-spacing: 5px;
+}
+
+.program-event {
+  display: grid;
+  grid-template-columns: 25px 112px 1fr;
+  align-items: center;
+  gap: 6px;
+  min-height: 53px;
+  border-bottom: 1px solid #dfc99f;
+}
+
+.program-symbol {
+  color: #b48647;
+  font-size: 18px;
+  text-align: center;
+}
+
+.program-time {
+  color: #936a3d;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.program-event-name {
+  color: #98633d;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.program-venue {
+  margin-top: 22px;
+  text-align: center;
+}
+
+.program-venue > span {
+  color: #a77a3e;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.program-venue h3 {
+  margin: 8px 0 4px;
+  color: #95613e;
+  font-family: Georgia, serif;
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.program-venue p {
+  color: #92704a;
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+
+@media (max-width: 380px) {
+  .wedding-day-program { padding: 22px 11px; }
+  .program-event { grid-template-columns: 22px 100px 1fr; gap: 4px; }
+  .program-time { font-size: 10px; }
+  .program-event-name { font-size: 12px; }
+}
+
+/* Wedding programme timeline spacing */
+.wedding-day-program .program-event {
+  display: grid;
+  grid-template-columns: 30px 118px minmax(0, 1fr);
+  align-items: center;
+  column-gap: 14px;
+  min-height: 58px;
+  padding: 9px 5px;
+}
+
+.wedding-day-program .program-symbol {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.wedding-day-program .program-time {
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.wedding-day-program .program-event-name {
+  min-width: 0;
+  font-size: 15px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .wedding-day-program .program-event {
+    grid-template-columns: 25px 105px minmax(0, 1fr);
+    column-gap: 9px;
+    min-height: 54px;
+  }
+
+  .wedding-day-program .program-time {
+    font-size: 11px;
+  }
+
+  .wedding-day-program .program-event-name {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .wedding-day-program .program-event {
+    grid-template-columns: 22px 92px minmax(0, 1fr);
+    column-gap: 7px;
+  }
+
+  .wedding-day-program .program-time {
+    font-size: 10px;
+  }
+
+  .wedding-day-program .program-event-name {
+    font-size: 12px;
+  }
+}
+
+.wedding-day-program .program-timeline {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.wedding-day-program .program-event-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #dfc99f;
+  border-radius: 14px;
+  background: rgba(255,255,255,.55);
+}
+
+.wedding-day-program .program-card-visual {
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(145deg,#f8edda,#fffaf0);
+}
+
+.wedding-day-program .program-card-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wedding-day-program .program-card-visual span {
+  color: #ad8248;
+  font-size: 43px;
+}
+
+.wedding-day-program .program-card-details {
+  padding: 11px 12px 14px;
+  text-align: center;
+}
+
+.wedding-day-program .program-card-details .program-time {
+  color: #a77a3e;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.wedding-day-program .program-card-details h3 {
+  margin: 6px 0 0;
+  color: #95613e;
+  font-family: Georgia,serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+@media (max-width: 380px) {
+  .wedding-day-program .program-timeline { gap: 9px; }
+  .wedding-day-program .program-card-visual { height: 110px; }
+  .wedding-day-program .program-card-details { padding: 9px 6px 11px; }
+  .wedding-day-program .program-card-details h3 { font-size: 13px; }
+}
+
+/* Scene 03 - Premium Wedding Animations */
+.celebration-scene {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.celebration-scene .celebration-intro {
+  animation: scene03Intro 1.3s ease both;
+}
+
+.celebration-scene .celebration-eyebrow {
+  animation: scene03Glow 3s ease-in-out infinite;
+}
+
+.celebration-scene .celebration-floral {
+  animation: scene03Floral 5s ease-in-out infinite;
+}
+
+.celebration-scene .mehendi-feature {
+  position: relative;
+  animation: scene03CardReveal 1.4s cubic-bezier(.2,.75,.25,1) both;
+  box-shadow: 0 12px 35px rgba(151,104,48,.10);
+  transition: box-shadow .5s ease, transform .5s ease;
+}
+
+.celebration-scene .mehendi-artwork {
+  position: relative;
+  overflow: hidden;
+}
+
+.celebration-scene .mehendi-artwork img {
+  transform-origin: center;
+  animation: scene03ImageReveal 2s ease both, scene03SlowZoom 22s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.celebration-scene .mehendi-artwork::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 25%, rgba(255,255,255,.32) 48%, transparent 70%);
+  transform: translateX(-130%);
+  animation: scene03Shimmer 7s ease-in-out 2s infinite;
+}
+
+.celebration-scene .mehendi-shlok {
+  animation: scene03Shlok 1.8s ease both;
+  text-shadow: 0 0 18px rgba(190,143,72,.18);
+}
+
+.celebration-scene .mehendi-caption {
+  animation: scene03Caption 1.2s ease both;
+}
+
+.celebration-scene .mehendi-caption h3 {
+  animation: scene03Glow 4s ease-in-out infinite;
+}
+
+@keyframes scene03Intro {
+  from { opacity: 0; transform: translateY(35px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scene03CardReveal {
+  from { opacity: 0; transform: translateY(45px) scale(.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes scene03ImageReveal {
+  from { opacity: .65; }
+  to { opacity: 1; }
+}
+
+@keyframes scene03SlowZoom {
+  from { scale: 1; }
+  to { scale: 1.045; }
+}
+
+@keyframes scene03Shlok {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scene03Caption {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scene03Shimmer {
+  0%, 35% { transform: translateX(-130%); }
+  65%, 100% { transform: translateX(130%); }
+}
+
+@keyframes scene03Glow {
+  0%, 100% { text-shadow: 0 0 0 rgba(190,143,72,0); }
+  50% { text-shadow: 0 0 15px rgba(190,143,72,.4); }
+}
+
+@keyframes scene03Floral {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-7px) rotate(3deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .celebration-scene *,
+  .celebration-scene *::before,
+  .celebration-scene *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Mehendi - Enhanced Celebration Effects */
+.celebration-scene .mehendi-feature {
+  border: 1px solid rgba(190,145,75,.65);
+  box-shadow: 0 15px 45px rgba(145,100,45,.16), 0 0 24px rgba(224,184,112,.12);
+  animation: mehendiFloat 7s ease-in-out infinite;
+}
+
+.celebration-scene .mehendi-artwork::before {
+  content: "✿     ✧        ❀       ✧     ✿";
+  position: absolute;
+  z-index: 3;
+  inset: 12px 0 auto;
+  color: #c69a58;
+  font-size: 17px;
+  letter-spacing: 10px;
+  text-align: center;
+  opacity: .65;
+  pointer-events: none;
+  animation: mehendiFlowers 5s ease-in-out infinite;
+}
+
+.celebration-scene .mehendi-artwork {
+  box-shadow: inset 0 0 35px rgba(205,160,85,.15);
+}
+
+.celebration-scene .mehendi-artwork img {
+  animation: mehendiCinematicZoom 18s ease-in-out infinite alternate;
+}
+
+.celebration-scene .mehendi-artwork::after {
+  background: linear-gradient(115deg, transparent 20%, rgba(255,255,255,.42) 48%, transparent 72%);
+  animation: mehendiLightSweep 6s ease-in-out infinite;
+}
+
+.celebration-scene .mehendi-shlok {
+  animation: mehendiBlessing 4s ease-in-out infinite;
+}
+
+.celebration-scene .mehendi-caption {
+  position: relative;
+  overflow: hidden;
+}
+
+.celebration-scene .mehendi-caption::before {
+  content: "✧";
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: #c49a5b;
+  animation: mehendiSparkle 3s ease-in-out infinite;
+}
+
+.celebration-scene .mehendi-caption::after {
+  content: "✧";
+  position: absolute;
+  right: 16px;
+  bottom: 12px;
+  color: #c49a5b;
+  animation: mehendiSparkle 3s ease-in-out 1.5s infinite;
+}
+
+@keyframes mehendiFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes mehendiFlowers {
+  0%, 100% { transform: translateY(0) rotate(-2deg); opacity: .45; }
+  50% { transform: translateY(7px) rotate(2deg); opacity: .9; }
+}
+
+@keyframes mehendiCinematicZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.055); }
+}
+
+@keyframes mehendiLightSweep {
+  0%, 20% { transform: translateX(-140%); }
+  65%, 100% { transform: translateX(140%); }
+}
+
+@keyframes mehendiBlessing {
+  0%, 100% { text-shadow: 0 0 5px rgba(196,148,75,.12); }
+  50% { text-shadow: 0 0 20px rgba(196,148,75,.48); }
+}
+
+@keyframes mehendiSparkle {
+  0%, 100% { opacity: .3; transform: scale(.8) rotate(0); }
+  50% { opacity: 1; transform: scale(1.35) rotate(90deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .celebration-scene .mehendi-feature,
+  .celebration-scene .mehendi-artwork *,
+  .celebration-scene .mehendi-caption::before,
+  .celebration-scene .mehendi-caption::after {
+    animation: none !important;
+  }
+}
+
+/* Mehendi Scene - Animated Ivory Background */
+.celebration-scene {
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.celebration-scene::before,
+.celebration-scene::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.celebration-scene::before {
+  background:
+    radial-gradient(circle at 15% 25%,rgba(211,170,99,.20) 0 2px,transparent 3px),
+    radial-gradient(circle at 78% 65%,rgba(211,170,99,.18) 0 2px,transparent 3px),
+    radial-gradient(circle at 48% 85%,rgba(211,170,99,.16) 0 2px,transparent 3px),
+    radial-gradient(ellipse at 20% 30%,rgba(255,255,255,.42),transparent 38%),
+    radial-gradient(ellipse at 85% 70%,rgba(226,195,139,.20),transparent 42%);
+  background-size: 95px 115px,125px 145px,105px 125px,100% 100%,100% 100%;
+  animation: mehendiBackgroundDrift 22s ease-in-out infinite alternate;
+}
+
+.celebration-scene::after {
+  background:
+    radial-gradient(circle at 12% 18%,rgba(196,148,75,.34) 0 1.5px,transparent 3px),
+    radial-gradient(circle at 85% 38%,rgba(196,148,75,.28) 0 1.5px,transparent 3px),
+    radial-gradient(circle at 65% 82%,rgba(196,148,75,.30) 0 1.5px,transparent 3px);
+  background-size: 150px 180px,190px 210px,170px 190px;
+  animation: mehendiGoldenParticles 28s linear infinite;
+}
+
+.celebration-scene .celebration-grain {
+  animation: mehendiGrainFloat 35s linear infinite;
+}
+
+@keyframes mehendiBackgroundDrift {
+  0% { background-position: 0 0,0 0,0 0,0 0,0 0; }
+  100% { background-position: 30px 45px,-25px 35px,20px -30px,0 0,0 0; }
+}
+
+@keyframes mehendiGoldenParticles {
+  from { background-position: 0 0,20px 30px,40px 10px; }
+  to { background-position: 0 -360px,20px -420px,40px -300px; }
+}
+
+@keyframes mehendiGrainFloat {
+  from { background-position: 0 0; }
+  to { background-position: 30px 45px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .celebration-scene::before,
+  .celebration-scene::after,
+  .celebration-scene .celebration-grain {
+    animation: none !important;
+  }
+}
+
+/* Decorative CSS Mehendi Cones */
+.celebration-scene .mehendi-feature {
+  position: relative;
+  overflow: visible;
+}
+
+.mehendi-cone {
+  position: absolute;
+  z-index: 5;
+  top: 43%;
+  width: 76px;
+  height: 190px;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 25% 25%, transparent 0 8px, #d8b65d 9px 11px, transparent 12px),
+    radial-gradient(circle at 65% 65%, #e5c36d 0 3px, transparent 4px),
+    repeating-linear-gradient(135deg, transparent 0 13px, rgba(224,190,99,.9) 14px 17px, transparent 18px 28px),
+    linear-gradient(90deg,#075b3d 0%,#08704b 68%,#722b20 69%,#722b20 100%);
+  background-size: 48px 48px,24px 24px,100% 100%,100% 100%;
+  clip-path: polygon(0 0,72% 8%,100% 50%,72% 92%,0 100%);
+  filter: drop-shadow(0 5px 5px rgba(75,49,20,.2));
+  animation: mehendiConeFloat 5s ease-in-out infinite;
+}
+
+.mehendi-cone-left {
+  left: -57px;
+}
+
+.mehendi-cone-right {
+  right: -57px;
+  transform: scaleX(-1);
+  animation-delay: -2.5s;
+}
+
+@keyframes mehendiConeFloat {
+  0%,100% { translate: 0 0; }
+  50% { translate: 0 -9px; }
+}
+
+@media (max-width: 600px) {
+  .mehendi-cone {
+    width: 48px;
+    height: 125px;
+    top: 45%;
+  }
+
+  .mehendi-cone-left { left: -29px; }
+  .mehendi-cone-right { right: -29px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mehendi-cone { animation: none !important; }
+}
+
+/* Decorative CSS Mehendi Cones */
+.celebration-scene .mehendi-feature {
+  position: relative;
+  overflow: visible;
+}
+
+.mehendi-cone {
+  position: absolute;
+  z-index: 5;
+  top: 43%;
+  width: 76px;
+  height: 190px;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 25% 25%, transparent 0 8px, #d8b65d 9px 11px, transparent 12px),
+    radial-gradient(circle at 65% 65%, #e5c36d 0 3px, transparent 4px),
+    repeating-linear-gradient(135deg, transparent 0 13px, rgba(224,190,99,.9) 14px 17px, transparent 18px 28px),
+    linear-gradient(90deg,#075b3d 0%,#08704b 68%,#722b20 69%,#722b20 100%);
+  background-size: 48px 48px,24px 24px,100% 100%,100% 100%;
+  clip-path: polygon(0 0,72% 8%,100% 50%,72% 92%,0 100%);
+  filter: drop-shadow(0 5px 5px rgba(75,49,20,.2));
+  animation: mehendiConeFloat 5s ease-in-out infinite;
+}
+
+.mehendi-cone-left {
+  left: -57px;
+}
+
+.mehendi-cone-right {
+  right: -57px;
+  transform: scaleX(-1);
+  animation-delay: -2.5s;
+}
+
+@keyframes mehendiConeFloat {
+  0%,100% { translate: 0 0; }
+  50% { translate: 0 -9px; }
+}
+
+@media (max-width: 600px) {
+  .mehendi-cone {
+    width: 48px;
+    height: 125px;
+    top: 45%;
+  }
+
+  .mehendi-cone-left { left: -29px; }
+  .mehendi-cone-right { right: -29px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mehendi-cone { animation: none !important; }
+}
+
+/* Mehendi decorative celebration effects */
+.celebration-scene .mehendi-feature {
+  isolation: isolate;
+}
+
+.mehendi-extras {
+  position: absolute;
+  z-index: 6;
+  inset: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.mehendi-toran {
+  position: absolute;
+  top: -24px;
+  left: 8%;
+  right: 8%;
+  color: #b58a45;
+  font-size: clamp(13px,3vw,21px);
+  letter-spacing: 5px;
+  text-align: center;
+  text-shadow: 0 2px 5px rgba(150,105,45,.2);
+  transform-origin: top center;
+  animation: mehendiToranSway 5s ease-in-out infinite;
+}
+
+.mehendi-mandala {
+  position: absolute;
+  top: 36%;
+  color: #9b793e;
+  font-size: 54px;
+  opacity: .42;
+  text-shadow: 0 2px 8px rgba(160,120,55,.2);
+  animation: mehendiMandalaSpin 24s linear infinite;
+}
+
+.mandala-left { left: -34px; }
+.mandala-right { right: -34px; animation-direction: reverse; }
+
+.mehendi-bell {
+  position: absolute;
+  top: 12%;
+  color: #bd9253;
+  font-size: 29px;
+  transform-origin: top center;
+  animation: mehendiBellSwing 2.8s ease-in-out infinite;
+}
+
+.bell-left { left: -15px; }
+.bell-right { right: -15px; animation-delay: -1.4s; }
+
+.mehendi-petal {
+  position: absolute;
+  top: -5%;
+  color: #bd7957;
+  font-size: 18px;
+  opacity: 0;
+  animation: mehendiPetalFall 9s linear infinite;
+}
+
+.petal-one { left: 18%; animation-delay: 0s; }
+.petal-two { left: 42%; animation-delay: 3s; }
+.petal-three { left: 68%; animation-delay: 5s; }
+.petal-four { left: 85%; animation-delay: 7s; }
+
+.mehendi-diya {
+  position: absolute;
+  bottom: 5px;
+  font-size: 23px;
+  filter: drop-shadow(0 0 7px rgba(219,153,57,.45));
+  animation: mehendiDiyaFlicker 1.8s ease-in-out infinite;
+}
+
+.diya-left { left: -13px; }
+.diya-right { right: -13px; animation-delay: -.9s; }
+
+@keyframes mehendiToranSway {
+  0%,100% { transform: rotate(-1deg); }
+  50% { transform: rotate(1deg); }
+}
+
+@keyframes mehendiMandalaSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes mehendiBellSwing {
+  0%,100% { rotate: -12deg; }
+  50% { rotate: 12deg; }
+}
+
+@keyframes mehendiPetalFall {
+  0% { opacity: 0; transform: translate(0,-10px) rotate(0deg); }
+  12% { opacity: .75; }
+  85% { opacity: .65; }
+  100% { opacity: 0; transform: translate(35px,650px) rotate(280deg); }
+}
+
+@keyframes mehendiDiyaFlicker {
+  0%,100% { opacity: .8; transform: scale(.95); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+
+@media (max-width: 600px) {
+  .mehendi-mandala { font-size: 36px; }
+  .mandala-left { left: -25px; }
+  .mandala-right { right: -25px; }
+  .mehendi-bell { font-size: 22px; }
+  .mehendi-diya { font-size: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mehendi-extras *,
+  .mehendi-extras { animation: none !important; }
+}
+
+/* Highlight Mehendi Date & Time */
+.celebration-scene .mehendi-caption small {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 11px 19px;
+  border: 1px solid #c69b59;
+  border-radius: 30px;
+  background: linear-gradient(135deg,#fff8e8,#f1dfb9,#fff8e8);
+  color: #80572f;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 16px rgba(164,119,53,.18);
+  animation: mehendiDateGlow 3s ease-in-out infinite;
+}
+
+@keyframes mehendiDateGlow {
+  0%,100% {
+    box-shadow: 0 4px 14px rgba(164,119,53,.14);
+    border-color: #c69b59;
+  }
+  50% {
+    box-shadow: 0 4px 24px rgba(164,119,53,.38);
+    border-color: #e0bd79;
+  }
+}
+
+@media (max-width: 380px) {
+  .celebration-scene .mehendi-caption small {
+    padding: 9px 12px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+/* Traditional Henna Inspired Effects */
+.mehendi-henna-decor {
+  position: absolute;
+  inset: 0;
+  z-index: 7;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.henna-vine {
+  position: absolute;
+  top: 20%;
+  writing-mode: vertical-rl;
+  color: #477548;
+  font-size: 24px;
+  line-height: 2.1;
+  letter-spacing: 8px;
+  opacity: .72;
+  text-shadow: 0 1px 4px rgba(65,105,57,.18);
+  animation: hennaVineGrow 3s ease both, hennaVineSway 6s ease-in-out 3s infinite;
+}
+
+.henna-vine-left { left: -25px; }
+.henna-vine-right { right: -25px; transform: rotate(180deg); animation-delay: 1s,4s; }
+
+.henna-paisley {
+  position: absolute;
+  top: 53%;
+  color: #557a43;
+  font-size: 48px;
+  opacity: .65;
+  text-shadow: 0 0 12px rgba(100,135,65,.22);
+  animation: hennaPaisley 12s ease-in-out infinite;
+}
+
+.paisley-left { left: -27px; }
+.paisley-right { right: -27px; animation-delay: -6s; }
+
+.henna-sparkle {
+  position: absolute;
+  color: #b68a43;
+  font-size: 19px;
+  animation: hennaSparkle 3.5s ease-in-out infinite;
+}
+
+.sparkle-a { top: 18%; left: 18%; }
+.sparkle-b { top: 62%; right: 12%; animation-delay: 1.2s; }
+.sparkle-c { top: 80%; left: 14%; animation-delay: 2.1s; }
+
+@keyframes hennaVineGrow {
+  from { opacity: 0; clip-path: inset(0 0 100% 0); }
+  to { opacity: .72; clip-path: inset(0 0 0 0); }
+}
+
+@keyframes hennaVineSway {
+  0%,100% { margin-top: 0; }
+  50% { margin-top: 9px; }
+}
+
+@keyframes hennaPaisley {
+  0%,100% { transform: rotate(-12deg) scale(.92); }
+  50% { transform: rotate(12deg) scale(1.08); }
+}
+
+@keyframes hennaSparkle {
+  0%,100% { opacity: .2; transform: scale(.7) rotate(0); }
+  50% { opacity: .9; transform: scale(1.3) rotate(90deg); }
+}
+
+@media (max-width:600px) {
+  .henna-vine { font-size: 17px; line-height: 2; }
+  .henna-vine-left { left: -18px; }
+  .henna-vine-right { right: -18px; }
+  .henna-paisley { font-size: 34px; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .mehendi-henna-decor,
+  .mehendi-henna-decor * { animation: none !important; }
+}
+
+/* Scene 04 - Wedding Day */
+.wedding-day-scene {
+  position: relative;
+  padding: 90px 20px;
+  overflow: hidden;
+  color: #92704a;
+  background: linear-gradient(145deg,#fff9ed,#f5e8d0 55%,#fff8e9);
+}
+
+.wedding-day-inner {
+  width: min(100%,900px);
+  margin: 0 auto;
+}
+
+.wedding-day-intro {
+  margin-bottom: 42px;
+  text-align: center;
+}
+
+.wedding-day-intro > span,
+.wedding-day-venue > span {
+  color: #a77a3e;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.wedding-day-floral {
+  margin: 17px 0;
+  color: #bd9253;
+  font-size: 24px;
+}
+
+.wedding-day-intro h2 {
+  margin: 0;
+  color: #936b3e;
+  font: italic 400 clamp(36px,6vw,56px) Georgia,serif;
+}
+
+.wedding-day-intro p {
+  color: #92704a;
+}
+
+.wedding-day-date {
+  display: table;
+  margin: 22px auto 12px;
+  padding: 12px 25px;
+  border: 1px solid #c69b59;
+  border-radius: 30px;
+  background: linear-gradient(135deg,#fff8e8,#f1dfb9);
+  color: #80572f;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 18px rgba(164,119,53,.18);
+}
+
+.wedding-day-intro > small {
+  color: #a77a3e;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.wedding-day-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 18px;
+}
+
+.wedding-event-card {
+  overflow: hidden;
+  border: 1px solid #dfc99f;
+  border-radius: 15px;
+  background: rgba(255,255,255,.58);
+  box-shadow: 0 8px 25px rgba(145,104,48,.09);
+  transition: transform .35s ease,box-shadow .35s ease;
+}
+
+.wedding-event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(145,104,48,.17);
+}
+
+.wedding-event-visual {
+  display: flex;
+  height: 175px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(145deg,#f8edda,#fffaf0);
+}
+
+.wedding-event-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wedding-event-visual > span {
+  color: #ad8248;
+  font-size: 52px;
+}
+
+.wedding-event-details {
+  padding: 15px 12px 18px;
+  text-align: center;
+}
+
+.wedding-event-time {
+  color: #a77a3e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.wedding-event-details h3 {
+  margin: 8px 0 5px;
+  color: #95613e;
+  font: italic 400 19px Georgia,serif;
+}
+
+.wedding-event-details p {
+  margin: 0;
+  color: #a18767;
+  font-size: 11px;
+}
+
+.wedding-day-venue {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.wedding-day-venue h3 {
+  margin: 10px 0 5px;
+  color: #95613e;
+  font: italic 400 30px Georgia,serif;
+}
+
+.wedding-day-venue p,
+.wedding-day-venue div {
+  color: #92704a;
+}
+
+@media(max-width:520px) {
+  .wedding-day-scene { padding: 65px 14px; }
+  .wedding-day-grid { gap: 11px; }
+  .wedding-event-visual { height: 125px; }
+  .wedding-event-details { padding: 12px 7px 14px; }
+  .wedding-event-details h3 { font-size: 15px; }
+  .wedding-event-details p { font-size: 10px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .wedding-day-scene * { transition: none !important; }
+}
+
+/* Special Haldi feature */
+.haldi-feature {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: stretch;
+  margin: 30px 0;
+  overflow: hidden;
+  border: 1px solid #d9b66f;
+  border-radius: 22px;
+  background: linear-gradient(120deg,#fff9e9,#f8e8bd,#fffaf0);
+  box-shadow: 0 15px 45px rgba(153,105,34,.16), inset 0 0 25px rgba(222,177,83,.12);
+  animation: haldi-card-glow 5s ease-in-out infinite;
+}
+.haldi-feature-image {
+  position: relative;
+  min-height: 350px;
+  overflow: hidden;
+}
+.haldi-feature-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  object-fit: cover;
+  animation: haldi-image-zoom 18s ease-in-out infinite alternate;
+}
+.haldi-image-label {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  padding: 9px 14px;
+  border: 1px solid rgba(255,255,255,.7);
+  border-radius: 30px;
+  color: #fffdf5;
+  background: rgba(103,72,23,.65);
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.haldi-feature-details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 38px 28px;
+  text-align: center;
+  background: radial-gradient(circle at 50% 45%,rgba(255,255,255,.9),transparent 70%);
+}
+.haldi-eyebrow {
+  color: #a77a31;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+}
+.haldi-time {
+  margin-top: 24px;
+  padding: 10px 25px;
+  border: 1px solid #d2a34d;
+  border-radius: 30px;
+  color: #80591f;
+  background: linear-gradient(120deg,#fff0bd,#f5d987,#fff4ce);
+  box-shadow: 0 0 22px rgba(205,157,61,.24);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  animation: haldi-time-glow 3s ease-in-out infinite;
+}
+.haldi-feature-details h3 {
+  margin: 20px 0 10px;
+  color: #82551e;
+  font-family: Georgia,serif;
+  font-size: clamp(30px,4vw,45px);
+  font-weight: 400;
+}
+.haldi-feature-details p {
+  max-width: 320px;
+  color: #927448;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.haldi-ornament {
+  margin: 20px 0;
+  color: #bd9148;
+  font-size: 22px;
+}
+.haldi-date {
+  color: #9a7138;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+@keyframes haldi-card-glow {
+  0%,100% { box-shadow: 0 15px 45px rgba(153,105,34,.13); }
+  50% { box-shadow: 0 15px 50px rgba(204,155,57,.27); }
+}
+@keyframes haldi-image-zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.07); }
+}
+@keyframes haldi-time-glow {
+  0%,100% { box-shadow: 0 0 12px rgba(205,157,61,.18); }
+  50% { box-shadow: 0 0 25px rgba(205,157,61,.4); }
+}
+@media(max-width:600px) {
+  .haldi-feature { grid-template-columns: 1fr; }
+  .haldi-feature-image,.haldi-feature-image img { min-height: 250px; }
+  .haldi-feature-details { padding: 30px 20px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .haldi-feature,.haldi-feature-image img,.haldi-time { animation: none !important; }
+}
+
+.haldi-feature {
+  grid-template-columns: 1fr;
+  max-width: 760px;
+  margin: 34px auto;
+}
+.haldi-feature-image {
+  min-height: 0;
+  height: auto;
+}
+.haldi-feature-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: 480px;
+  object-fit: cover;
+}
+.haldi-feature-details {
+  padding: 28px 22px 32px;
+}
+@media(max-width:600px) {
+  .haldi-feature-image,.haldi-feature-image img {
+    min-height: 0;
+    height: auto;
+  }
+}
+
+/* Scene 04 unified event layout */
+.wedding-day-inner {
+  width: min(100%, 1050px);
+  margin: 0 auto;
+}
+.wedding-day-intro {
+  margin-bottom: 42px;
+}
+.haldi-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 760px;
+  margin: 0 auto 58px;
+  padding: 28px;
+  overflow: hidden;
+  border: 1px solid #dfc99f;
+  border-radius: 20px;
+  background: linear-gradient(145deg,#fffaf0,#f7ecd8 55%,#fffaf0);
+  box-shadow: 0 12px 36px rgba(145,104,48,.12);
+  animation: none;
+}
+.haldi-feature-heading {
+  padding: 4px 12px 22px;
+  text-align: center;
+}
+.haldi-feature-heading > span {
+  color: #a77a3e;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+}
+.haldi-feature-heading h3 {
+  margin: 12px 0 8px;
+  color: #896438;
+  font-family: Georgia,serif;
+  font-size: clamp(30px,4vw,42px);
+  font-weight: 400;
+}
+.haldi-feature-heading p {
+  margin: 0;
+  color: #927b5b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.haldi-feature-image {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  overflow: hidden;
+  border: 5px solid #fff8e9;
+  outline: 1px solid #dfc99f;
+  border-radius: 12px;
+}
+.haldi-feature-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: 470px;
+  object-fit: contain;
+  animation: none;
+}
+.haldi-feature-time {
+  margin-top: 24px;
+  padding: 10px 28px;
+  border: 1px solid #d8b875;
+  border-radius: 30px;
+  color: #805b2b;
+  background: #f9edcf;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 15px rgba(145,104,48,.1);
+}
+.haldi-feature-date {
+  margin-top: 12px;
+  color: #a18356;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.wedding-events-heading {
+  margin: 0 0 25px;
+  text-align: center;
+}
+.wedding-events-heading > span {
+  color: #a77a3e;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+}
+.wedding-events-heading h3 {
+  margin: 10px 0;
+  color: #896b46;
+  font-family: Georgia,serif;
+  font-size: clamp(22px,3vw,30px);
+  font-weight: 400;
+}
+.wedding-events-heading > div {
+  color: #bd995f;
+  font-size: 20px;
+}
+.wedding-day-grid {
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 20px;
+}
+.wedding-event-card {
+  display: flex;
+  min-height: 150px;
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid #dfcda9;
+  border-radius: 14px;
+  background: rgba(255,255,255,.62);
+  box-shadow: 0 6px 22px rgba(145,104,48,.07);
+}
+.wedding-event-visual {
+  flex: 0 0 76px;
+  width: 76px;
+  height: 76px;
+  min-height: 0;
+  border: 1px solid #e5d3ad;
+  border-radius: 50%;
+  background: linear-gradient(145deg,#fff9e9,#f1e2c4);
+}
+.wedding-event-visual > span {
+  font-size: 34px;
+}
+.wedding-event-details {
+  flex: 1;
+  padding: 0;
+  text-align: left;
+}
+.wedding-event-time {
+  display: inline-block;
+  margin-bottom: 7px;
+  padding: 5px 11px;
+  border-radius: 20px;
+  background: #f6ecd7;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.wedding-event-details h3 {
+  margin: 0 0 5px;
+  color: #85633b;
+  font-family: Georgia,serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.wedding-event-details p {
+  margin: 0;
+  color: #9b8668;
+  font-size: 11px;
+  line-height: 1.6;
+}
+@media(max-width:600px) {
+  .haldi-feature {
+    margin-bottom: 42px;
+    padding: 16px;
+  }
+  .haldi-feature-image img {
+    max-height: none;
+  }
+  .wedding-day-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .wedding-event-card {
+    min-height: 120px;
+    padding: 14px;
+  }
+  .wedding-event-visual {
+    flex-basis: 62px;
+    width: 62px;
+    height: 62px;
+  }
+  .wedding-event-visual > span {
+    font-size: 29px;
+  }
+}
+
+/* Scene 04 unified event layout */
+.wedding-day-inner {
+  width: min(100%, 1050px);
+  margin: 0 auto;
+}
+.wedding-day-intro {
+  margin-bottom: 42px;
+}
+.haldi-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 760px;
+  margin: 0 auto 58px;
+  padding: 28px;
+  overflow: hidden;
+  border: 1px solid #dfc99f;
+  border-radius: 20px;
+  background: linear-gradient(145deg,#fffaf0,#f7ecd8 55%,#fffaf0);
+  box-shadow: 0 12px 36px rgba(145,104,48,.12);
+  animation: none;
+}
+.haldi-feature-heading {
+  padding: 4px 12px 22px;
+  text-align: center;
+}
+.haldi-feature-heading > span {
+  color: #a77a3e;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+}
+.haldi-feature-heading h3 {
+  margin: 12px 0 8px;
+  color: #896438;
+  font-family: Georgia,serif;
+  font-size: clamp(30px,4vw,42px);
+  font-weight: 400;
+}
+.haldi-feature-heading p {
+  margin: 0;
+  color: #927b5b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.haldi-feature-image {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  overflow: hidden;
+  border: 5px solid #fff8e9;
+  outline: 1px solid #dfc99f;
+  border-radius: 12px;
+}
+.haldi-feature-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: 470px;
+  object-fit: contain;
+  animation: none;
+}
+.haldi-feature-time {
+  margin-top: 24px;
+  padding: 10px 28px;
+  border: 1px solid #d8b875;
+  border-radius: 30px;
+  color: #805b2b;
+  background: #f9edcf;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 15px rgba(145,104,48,.1);
+}
+.haldi-feature-date {
+  margin-top: 12px;
+  color: #a18356;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.wedding-events-heading {
+  margin: 0 0 25px;
+  text-align: center;
+}
+.wedding-events-heading > span {
+  color: #a77a3e;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+}
+.wedding-events-heading h3 {
+  margin: 10px 0;
+  color: #896b46;
+  font-family: Georgia,serif;
+  font-size: clamp(22px,3vw,30px);
+  font-weight: 400;
+}
+.wedding-events-heading > div {
+  color: #bd995f;
+  font-size: 20px;
+}
+.wedding-day-grid {
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 20px;
+}
+.wedding-event-card {
+  display: flex;
+  min-height: 150px;
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid #dfcda9;
+  border-radius: 14px;
+  background: rgba(255,255,255,.62);
+  box-shadow: 0 6px 22px rgba(145,104,48,.07);
+}
+.wedding-event-visual {
+  flex: 0 0 76px;
+  width: 76px;
+  height: 76px;
+  min-height: 0;
+  border: 1px solid #e5d3ad;
+  border-radius: 50%;
+  background: linear-gradient(145deg,#fff9e9,#f1e2c4);
+}
+.wedding-event-visual > span {
+  font-size: 34px;
+}
+.wedding-event-details {
+  flex: 1;
+  padding: 0;
+  text-align: left;
+}
+.wedding-event-time {
+  display: inline-block;
+  margin-bottom: 7px;
+  padding: 5px 11px;
+  border-radius: 20px;
+  background: #f6ecd7;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.wedding-event-details h3 {
+  margin: 0 0 5px;
+  color: #85633b;
+  font-family: Georgia,serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.wedding-event-details p {
+  margin: 0;
+  color: #9b8668;
+  font-size: 11px;
+  line-height: 1.6;
+}
+@media(max-width:600px) {
+  .haldi-feature {
+    margin-bottom: 42px;
+    padding: 16px;
+  }
+  .haldi-feature-image img {
+    max-height: none;
+  }
+  .wedding-day-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .wedding-event-card {
+    min-height: 120px;
+    padding: 14px;
+  }
+  .wedding-event-visual {
+    flex-basis: 62px;
+    width: 62px;
+    height: 62px;
+  }
+  .wedding-event-visual > span {
+    font-size: 29px;
+  }
+}
+
+/* Haldi caption follows the Mehendi presentation */
+.haldi-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.haldi-feature-image {
+  width: 100%;
+  overflow: hidden;
+  border: 5px solid #fff8e9;
+  outline: 1px solid #dfc99f;
+  border-radius: 12px;
+}
+.haldi-feature-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+.haldi-shlok {
+  width: 100%;
+  padding: 24px 12px 8px;
+  color: #80572b;
+  text-align: center;
+  line-height: 1.8;
+  text-shadow: 0 1px 5px #fff9e9;
+}
+.haldi-shlok > span {
+  display: block;
+  font-family: Georgia,serif;
+  font-size: clamp(15px,3.5vw,18px);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.haldi-shlok p {
+  margin: 8px 0;
+  font-family: Georgia,serif;
+  font-size: clamp(12px,3.1vw,16px);
+  font-weight: 600;
+}
+.haldi-feature-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 12px 18px;
+  text-align: center;
+}
+.haldi-feature-caption h3 {
+  margin: 8px 0 14px;
+  color: #896438;
+  font-family: Georgia,serif;
+  font-size: clamp(25px,4vw,32px);
+  font-weight: 400;
+}
+.haldi-feature-time {
+  margin: 0;
+}
+.haldi-feature-date {
+  margin-top: 12px;
+}
+
+.wedding-event-visual.has-image {
+  flex: 0 0 105px;
+  width: 105px;
+  height: 125px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wedding-event-visual.has-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media(max-width:600px) {
+  .wedding-event-visual.has-image {
+    flex-basis: 88px;
+    width: 88px;
+    height: 112px;
+  }
+}
+
+/* Scene 04 - Full image event cards */
+.wedding-day-grid {
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 24px;
+}
+.wedding-event-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  text-align: center;
+}
+.wedding-event-visual,
+.wedding-event-visual.has-image {
+  flex: none;
+  width: 100%;
+  height: 250px;
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+  background: linear-gradient(145deg,#f8edda,#fffaf0);
+}
+.wedding-event-visual.has-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.wedding-event-visual:not(.has-image) > span {
+  font-size: 65px;
+}
+.wedding-event-details {
+  padding: 20px 14px 24px;
+  text-align: center;
+}
+.wedding-event-details h3 {
+  margin: 10px 0;
+  font-size: 21px;
+}
+.wedding-event-time {
+  margin-bottom: 5px;
+}
+.wedding-event-details p {
+  font-size: 12px;
+}
+@media(max-width:600px) {
+  .wedding-day-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .wedding-event-visual,
+  .wedding-event-visual.has-image {
+    height: 260px;
+  }
+  .wedding-event-details {
+    padding: 16px 12px 20px;
+  }
+}
+
+/* Scene 04 - Royal cinematic motion */
+.wedding-day-intro {
+  animation: weddingIntroReveal 1.1s cubic-bezier(.2,.7,.2,1) both;
+}
+.wedding-event-card {
+  position: relative;
+  isolation: isolate;
+  transition: transform .55s cubic-bezier(.2,.7,.2,1),
+              box-shadow .55s ease,
+              border-color .55s ease;
+  animation: weddingCardReveal .9s cubic-bezier(.2,.7,.2,1) both;
+}
+.wedding-event-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(115deg,transparent 25%,rgba(255,255,255,.42) 48%,transparent 70%);
+  transform: translateX(-130%);
+  transition: transform .9s ease;
+}
+.wedding-event-card:hover {
+  transform: translateY(-7px);
+  border-color: #cba45f;
+  box-shadow: 0 18px 38px rgba(145,104,48,.17);
+}
+.wedding-event-card:hover::after {
+  transform: translateX(130%);
+}
+.wedding-event-visual {
+  position: relative;
+  overflow: hidden;
+}
+.wedding-event-visual img {
+  transition: transform 1.2s cubic-bezier(.2,.7,.2,1);
+  will-change: transform;
+}
+.wedding-event-card:hover .wedding-event-visual img {
+  transform: scale(1.07);
+}
+.wedding-event-visual:not(.has-image) span {
+  animation: weddingIconFloat 4s ease-in-out infinite;
+}
+.wedding-event-time {
+  animation: weddingTimeGlow 4s ease-in-out infinite;
+}
+.haldi-feature {
+  animation: haldiRoyalReveal 1.2s cubic-bezier(.2,.7,.2,1) both,
+             haldiRoyalAura 6s ease-in-out 1.2s infinite;
+}
+.haldi-feature-image img {
+  transition: transform 1.4s ease;
+}
+.haldi-feature:hover .haldi-feature-image img {
+  transform: scale(1.035);
+}
+.haldi-shlok {
+  animation: weddingShlokReveal 1.5s ease both;
+}
+.wedding-events-heading {
+  animation: weddingIntroReveal 1.1s ease both;
+}
+.wedding-day-venue {
+  animation: weddingIntroReveal 1.2s ease both;
+}
+@keyframes weddingIntroReveal {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes weddingCardReveal {
+  from { opacity: 0; transform: translateY(28px) scale(.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes weddingIconFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+@keyframes weddingTimeGlow {
+  0%,100% { box-shadow: 0 0 0 rgba(205,157,61,0); }
+  50% { box-shadow: 0 0 16px rgba(205,157,61,.2); }
+}
+@keyframes haldiRoyalReveal {
+  from { opacity: 0; transform: translateY(35px) scale(.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes haldiRoyalAura {
+  0%,100% { box-shadow: 0 12px 36px rgba(145,104,48,.12); }
+  50% { box-shadow: 0 16px 42px rgba(190,143,72,.22); }
+}
+@keyframes weddingShlokReveal {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media(hover:none) {
+  .wedding-event-card:hover {
+    transform: none;
+  }
+  .wedding-event-card:hover .wedding-event-visual img,
+  .haldi-feature:hover .haldi-feature-image img {
+    transform: none;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .wedding-day-scene *,
+  .wedding-day-scene *::before,
+  .wedding-day-scene *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Scene 04 - connected celebration experience */
+.wedding-day-scene {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.wedding-day-inner {
+  position: relative;
+  z-index: 1;
+}
+.wedding-scene-effects {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.wedding-petal {
+  position: absolute;
+  top: -35px;
+  color: #c99c54;
+  opacity: 0;
+  font-size: 19px;
+  animation: weddingPetalFall 13s linear infinite;
+}
+.petal-a { left: 8%; animation-delay: 0s; }
+.petal-b { left: 27%; animation-delay: 4s; font-size: 14px; }
+.petal-c { left: 53%; animation-delay: 7s; }
+.petal-d { left: 76%; animation-delay: 2s; font-size: 16px; }
+.petal-e { left: 92%; animation-delay: 9s; }
+.wedding-diya {
+  position: absolute;
+  bottom: 45px;
+  font-size: 25px;
+  opacity: .65;
+  filter: drop-shadow(0 0 8px rgba(227,164,65,.5));
+  animation: weddingDiyaFlicker 2.2s ease-in-out infinite;
+}
+.diya-a { left: 12px; }
+.diya-b { right: 12px; animation-delay: 1s; }
+
+.wedding-day-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  gap: 25px;
+  width: min(100%,760px);
+  margin: 0 auto;
+  padding-left: 34px;
+}
+.wedding-day-grid::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  bottom: 25px;
+  left: 11px;
+  width: 2px;
+  border-radius: 5px;
+  background: linear-gradient(to bottom,transparent,#d7b36f 8%,#c69a53 50%,#d7b36f 92%,transparent);
+  box-shadow: 0 0 9px rgba(193,146,68,.28);
+}
+.wedding-event-card {
+  position: relative;
+  overflow: visible;
+  border-radius: 17px;
+}
+.wedding-event-card::before {
+  content: "✦";
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: -34px;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border: 1px solid #cda65f;
+  border-radius: 50%;
+  color: #a77a3e;
+  background: #fff8e9;
+  box-shadow: 0 0 12px rgba(193,146,68,.2);
+  transform: translateY(-50%);
+}
+.wedding-event-card::after {
+  border-radius: 17px;
+}
+.wedding-event-visual {
+  border-radius: 16px 16px 0 0;
+}
+.wedding-event-visual img {
+  animation: weddingImageBreath 16s ease-in-out infinite alternate;
+}
+.wedding-event-card:nth-child(even) .wedding-event-visual img {
+  animation-delay: -5s;
+}
+.wedding-event-card:hover::before {
+  color: #fff;
+  background: #b78b49;
+}
+.wedding-event-card:hover {
+  transform: translateX(5px) translateY(-3px);
+}
+.wedding-event-details h3 {
+  animation: weddingTitleReveal .8s ease both;
+}
+.haldi-feature {
+  position: relative;
+}
+.haldi-feature::after {
+  content: "✧";
+  position: absolute;
+  top: 12px;
+  right: 17px;
+  color: #c59a55;
+  font-size: 22px;
+  animation: weddingSparkle 3s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes weddingPetalFall {
+  0% { opacity: 0; transform: translate3d(0,-20px,0) rotate(0deg); }
+  12% { opacity: .65; }
+  85% { opacity: .5; }
+  100% { opacity: 0; transform: translate3d(65px,105vh,0) rotate(300deg); }
+}
+@keyframes weddingDiyaFlicker {
+  0%,100% { opacity: .55; filter: drop-shadow(0 0 5px rgba(227,164,65,.3)); }
+  50% { opacity: .95; filter: drop-shadow(0 0 13px rgba(227,164,65,.75)); }
+}
+@keyframes weddingImageBreath {
+  from { transform: scale(1); }
+  to { transform: scale(1.045); }
+}
+@keyframes weddingTitleReveal {
+  from { opacity: .55; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes weddingSparkle {
+  0%,100% { opacity: .4; transform: rotate(0) scale(.8); }
+  50% { opacity: 1; transform: rotate(90deg) scale(1.2); }
+}
+@media(max-width:600px) {
+  .wedding-day-grid {
+    gap: 20px;
+    padding-left: 29px;
+  }
+  .wedding-day-grid::before { left: 9px; }
+  .wedding-event-card::before {
+    left: -30px;
+    width: 21px;
+    height: 21px;
+  }
+  .wedding-event-card:hover {
+    transform: none;
+  }
+  .wedding-diya { font-size: 19px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .wedding-petal,.wedding-diya,.wedding-event-visual img {
+    animation: none !important;
+  }
+}
+
+/* MOBILE RESPONSIVE — SCENES 01 & 02 */
+@media (max-width: 600px) {
+  .ganesh-opening {
+    min-height: 100svh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .ganesh-frame {
+    min-height: 100svh;
+    padding: 28px 14px 72px;
+  }
+
+  .ganesh-illustration-wrap {
+    width: min(88vw, 380px);
+  }
+
+  .ganesh-image-wrap {
+    height: auto;
+    aspect-ratio: 736 / 1308;
+  }
+
+  .ganesh-original-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .ganesh-eyebrow {
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+
+  .ganesh-mantra h1 {
+    font-size: clamp(21px, 6vw, 30px);
+  }
+
+  .ganesh-mantra p {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+
+  .ganesh-scroll {
+    bottom: 14px;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .divine-loader p {
+    font-size: 11px;
+    letter-spacing: 5px;
+  }
+
+  .wedding-scene {
+    padding: 65px 16px 55px;
+  }
+
+  .wedding-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .wedding-heading h2 {
+    font-size: clamp(25px, 7vw, 36px);
+  }
+
+  .wedding-heading p {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .wedding-names h1 {
+    font-size: clamp(48px, 14vw, 70px);
+  }
+
+  .wedding-details {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .countdown-grid {
+    gap: 5px;
+  }
+
+  .countdown-unit strong {
+    font-size: clamp(23px, 7vw, 32px);
+  }
+
+  .countdown-unit span {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .countdown-date {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* GANESH NIMANTRAN — IMAGE FOCUS */
+.wedding-day-grid .wedding-event-card:first-child .wedding-event-visual {
+  background: #fff;
+}
+
+.wedding-day-grid .wedding-event-card:first-child .wedding-event-visual img {
+  object-fit: contain;
+  transform: scale(1.65);
+  transform-origin: center;
+  animation: none;
+}
+
+@media (max-width: 600px) {
+  .wedding-day-grid .wedding-event-card:first-child .wedding-event-visual img {
+    transform: scale(1.55);
+  }
+}
+
+.wedding-day-grid .wedding-event-card:first-child .wedding-event-visual img {
+  object-fit: contain;
+  transform: none;
+  animation: none;
+}
+
+.wedding-day-grid .wedding-event-card:first-child .wedding-event-visual img {
+  object-fit: contain;
+  transform: none;
+  animation: none;
+}
+
+/* MOBILE — SCENE 03 MEHENDI */
+@media (max-width: 600px) {
+  .celebration-scene {
+    padding: 65px 14px 55px;
+  }
+
+  .celebration-inner {
+    width: 100%;
+  }
+
+  .celebration-intro {
+    margin-bottom: 34px;
+    padding: 0 5px;
+  }
+
+  .celebration-intro h2 {
+    font-size: clamp(27px, 8vw, 36px);
+  }
+
+  .celebration-subtitle {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .celebration-scene .mehendi-feature {
+    width: min(100%, 340px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .celebration-scene .mehendi-artwork {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .celebration-scene .mehendi-artwork img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .celebration-scene .mehendi-shlok {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: clamp(11px, 3vw, 14px);
+    line-height: 1.65;
+  }
+
+  .celebration-scene .mehendi-shlok p {
+    margin: 4px 0;
+    font-size: inherit;
+  }
+
+  .celebration-scene .mehendi-caption {
+    padding: 18px 8px 22px;
+  }
+
+  .celebration-scene .mehendi-caption h3 {
+    font-size: clamp(23px, 7vw, 30px);
+  }
+
+  .celebration-scene .mehendi-caption small {
+    max-width: 100%;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .mehendi-cone {
+    width: 35px;
+    height: 100px;
+  }
+
+  .mehendi-cone-left { left: -17px; }
+  .mehendi-cone-right { right: -17px; }
+}
+
+/* MOBILE — SCENE 04 WEDDING DAY */
+@media (max-width: 600px) {
+  .wedding-day-scene {
+    padding: 60px 14px 50px;
+  }
+
+  .wedding-day-inner {
+    width: 100%;
+  }
+
+  .wedding-day-intro {
+    padding: 0 5px;
+    margin-bottom: 32px;
+  }
+
+  .wedding-day-intro h2 {
+    font-size: clamp(30px, 8vw, 39px);
+  }
+
+  .wedding-day-intro p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .haldi-feature {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 38px;
+  }
+
+  .haldi-feature-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .haldi-feature-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    object-fit: contain;
+  }
+
+  .haldi-shlok {
+    padding: 20px 5px 8px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .haldi-shlok p {
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+
+  .haldi-feature-caption h3 {
+    font-size: 27px;
+  }
+
+  .wedding-events-heading {
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  .wedding-events-heading h3 {
+    font-size: clamp(27px, 7vw, 34px);
+    line-height: 1.3;
+  }
+
+  .wedding-day-grid {
+    width: 100%;
+    padding-left: 29px;
+    gap: 18px;
+  }
+
+  .wedding-event-card {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .wedding-event-visual,
+  .wedding-event-visual.has-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+  }
+
+  .wedding-event-visual.has-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .wedding-event-details {
+    padding: 15px 10px 18px;
+  }
+
+  .wedding-event-details h3 {
+    font-size: 19px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .wedding-event-details p {
+    font-size: 11px;
+  }
+
+  .wedding-day-venue {
+    padding: 0 10px;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 380px) {
+  .wedding-day-grid {
+    padding-left: 25px;
+  }
+
+  .wedding-event-visual,
+  .wedding-event-visual.has-image {
+    height: 190px;
+  }
+
+  .haldi-shlok p {
+    font-size: 11px;
+  }
+}
