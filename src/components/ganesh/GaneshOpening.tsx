@@ -47,7 +47,7 @@ function Diya({ side }: { side: "left" | "right" }) {
   );
 }
 
-export default function GaneshOpening() {
+export default function GaneshOpening({ onNext }: { onNext: () => void }) {
   const [showLoader, setShowLoader] = useState(true);
   const [fadeLoader, setFadeLoader] = useState(false);
 
@@ -221,7 +221,7 @@ export default function GaneshOpening() {
           animate={{ opacity: 1 }}
           transition={{ delay: 4 }}
         >
-          <a className="ganesh-scroll-link" href="#invitation">
+          <button type="button" className="ganesh-scroll-link" onClick={onNext}>
             <span>BEGIN THE CELEBRATION</span>
             <motion.div
               animate={{ y: [0, 9, 0] }}
@@ -229,7 +229,7 @@ export default function GaneshOpening() {
             >
               ↓
             </motion.div>
-          </a>
+          </button>
         </motion.div>
       </div>
         </>

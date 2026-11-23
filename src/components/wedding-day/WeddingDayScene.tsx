@@ -30,7 +30,7 @@ export default function WeddingDayScene() {
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.4 }}
         >
           <span>॥ शुभ विवाह ॥</span>
           <div className="wedding-day-floral">❀　✧　❀</div>
@@ -45,7 +45,7 @@ export default function WeddingDayScene() {
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.15 }}
-          transition={{ duration: 0.9 }}
+          transition={{ duration: 1.4, delay: 0.35 }}
         >
           <div className="haldi-feature-image">
             <img src="/haldi-ceremony.jpg" alt="Haldi Ceremony" />
@@ -76,7 +76,7 @@ export default function WeddingDayScene() {
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.15 }}
-              transition={{ duration: 0.55, delay: (index % 2) * 0.08 }}
+              transition={{ duration: 1.1, delay: index * 0.35 }}
             >
               <div className={`wedding-event-visual${event.image ? " has-image" : ""}`}>
                 {event.image ? <img src={event.image} alt={event.name} /> : <span>{event.symbol}</span>}
@@ -93,7 +93,40 @@ export default function WeddingDayScene() {
         <footer className="wedding-day-venue">
           <span>THE WEDDING VENUE</span>
           <h3>Kiran Paradise</h3>
-          <p>Mansarovar, Jaipur, Rajasthan</p>
+          <p>Iskcon Road, Ward 27, Sector 101</p>
+          <p>Mansarovar, Jaipur, Rajasthan 302020</p>
+          <a className="venue-map-link" href="https://maps.app.goo.gl/34JJDY1EiWPtBF2z8?g_st=ac" target="_blank" rel="noreferrer">OPEN IN GOOGLE MAPS ↗</a>
+          <motion.div
+            className="venue-rsvp-layout"
+            initial={{ opacity: 0, y: 35, scale: 0.97 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 1.1, ease: "easeOut" }}
+          >
+            <motion.div
+              className="venue-qr"
+              initial={{ opacity: 0, x: -25 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.25 }}
+            >
+              <img src="/venue-qr.png" alt="Scan to open Kiran Paradise in Google Maps" />
+              <span>SCAN FOR DIRECTIONS</span>
+            </motion.div>
+            <motion.div
+              className="venue-rsvp"
+              initial={{ opacity: 0, x: 25 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.4 }}
+            >
+              <span>RSVP</span>
+              <h4>Devanshu Mathur</h4>
+              <a className="rsvp-phone" href="tel:+919664498007">+91 96644 98007</a>
+              <a className="rsvp-phone" href="tel:+917737771037">+91 77377 71037</a>
+              <a className="rsvp-whatsapp" href="https://wa.me/919664498007" target="_blank" rel="noreferrer">WHATSAPP ↗</a>
+            </motion.div>
+          </motion.div>
           <div>❧ ✧ ❧</div>
         </footer>
       </div>

@@ -14,6 +14,7 @@ const petals = Array.from({ length: 30 }, (_, i) => ({
 const weddingTimestamp = new Date("2027-02-02T00:00:00+05:30").getTime();
 
 export default function InvitationReveal() {
+  const [dateRevealed, setDateRevealed] = useState(false);
   const [countdown, setCountdown] = useState<{
     days: number;
     hours: number;
@@ -124,27 +125,36 @@ export default function InvitationReveal() {
         </motion.div>
 
         <motion.div
-          className="wedding-countdown"
+          className={`wedding-countdown combined-date-reveal ${dateRevealed ? "revealed" : ""}`}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ delay: 1, duration: 1.2 }}
         >
-          <span className="countdown-heading">TIME UNTIL THE WEDDING</span>
-          <div className="countdown-grid">
-            {countdown && [
-              { label: "DAYS", value: countdown.days },
-              { label: "HOURS", value: countdown.hours },
-              { label: "MINUTES", value: countdown.minutes },
-              { label: "SECONDS", value: countdown.seconds },
-            ].map((unit) => (
-              <div className="countdown-unit" key={unit.label}>
-                <strong>{String(unit.value).padStart(2, "0")}</strong>
-                <span>{unit.label}</span>
-              </div>
-            ))}
+          <div className="combined-date-content">
+            <span className="countdown-heading">TIME UNTIL THE WEDDING</span>
+            <div className="countdown-grid">
+              {countdown && [
+                { label: "DAYS", value: countdown.days },
+                { label: "HOURS", value: countdown.hours },
+                { label: "MINUTES", value: countdown.minutes },
+                { label: "SECONDS", value: countdown.seconds },
+              ].map((unit) => (
+                <div className="countdown-unit" key={unit.label}>
+                  <strong>{String(unit.value).padStart(2, "0")}</strong>
+                  <span>{unit.label}</span>
+                </div>
+              ))}
+            </div>
+            <p className="countdown-date">02 FEBRUARY 2027</p>
           </div>
-          <p className="countdown-date">02 FEBRUARY 2027</p>
+          {!dateRevealed && (
+            <button type="button" className="combined-date-cover" onClick={() => setDateRevealed(true)}>
+              <span className="combined-cover-ornament">✧ ❧ ✧</span>
+              <span>TAP TO REVEAL</span>
+              <span className="combined-cover-heart">♥</span>
+            </button>
+          )}
         </motion.div>
 
         <motion.div
