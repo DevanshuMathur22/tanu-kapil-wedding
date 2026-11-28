@@ -6255,3 +6255,327 @@ body {
     top:25%!important;
   }
 }
+
+/* DISTINCT WEDDING EVENT CARD DESIGNS */
+.wedding-carousel-card{position:relative;transition:background .3s,border-color .3s,box-shadow .3s}
+.wedding-carousel-content{position:relative}
+.wedding-carousel-content h3{font-family:Georgia,serif}
+.wedding-carousel-content h4{display:block!important}
+.wedding-carousel-content .wedding-carousel-time{position:static;display:inline-block;margin:16px auto;padding:14px 28px;border-radius:5px;font-size:19px;font-weight:700;letter-spacing:3px}
+
+/* 1. GANESH — CLASSIC IVORY */
+.event-card-0{background:#fffaf0!important;border:2px solid #c69b58!important;border-radius:4px!important;box-shadow:0 12px 35px #9b753322!important}
+.event-card-0 .wedding-carousel-content{padding:55px 30px!important}
+.event-card-0 .wedding-carousel-content h3{font-size:42px!important;color:#81552c!important}
+.event-card-0 .wedding-carousel-time{background:#80572e;color:#fff4dc}
+
+/* 2. BINDAYAK — TRADITIONAL */
+.event-card-1{background:#fff5e8!important;border:5px double #b98748!important;border-radius:18px!important}
+.event-card-1 .wedding-carousel-content{padding:38px 28px!important}
+.event-card-1 .wedding-carousel-content h3{color:#9a542f!important;font-size:35px!important}
+.event-card-1 .wedding-carousel-divider{font-size:25px}
+
+/* 3. BREAKFAST — FRESH MORNING */
+.event-card-2{background:#f7f5e9!important;border:1px solid #a8a77a!important;border-radius:30px 5px!important}
+.event-card-2 .wedding-carousel-content{padding:45px 35px!important}
+.event-card-2 .wedding-carousel-content h3{color:#566b43!important;font-size:36px!important}
+.event-card-2 .wedding-carousel-time{background:#64734e;color:#fff}
+
+/* 4. HALDI — YELLOW FLORAL */
+.event-card-3{background:#fff5c9!important;border:2px solid #d6a62c!important;border-radius:35px 5px!important}
+.event-card-3 .wedding-carousel-content{padding:42px 30px!important}
+.event-card-3 .wedding-carousel-content h3{color:#a66c13!important;font-size:40px!important}
+.event-card-3 .wedding-carousel-divider{color:#d39b19;font-size:25px}
+.event-card-3 .wedding-carousel-time{background:#b77a13;color:#fff9df}
+
+/* 5. LUNCH — RAJASTHANI HERITAGE */
+.event-card-4{background:#fff8ed!important;border:3px solid #a96d43!important;border-radius:3px!important;box-shadow:inset 0 0 0 7px #f0dfc7!important}
+.event-card-4 .wedding-carousel-content{padding:48px 35px!important}
+.event-card-4 .wedding-carousel-content h3{color:#8b482e!important;font-size:39px!important}
+.event-card-4 .wedding-carousel-time{background:#875b37;color:#fff8e8}
+
+/* 6. BHAAT — ROYAL MAROON */
+.event-card-5{background:#f8eee8!important;border:2px solid #87434a!important;border-radius:4px!important;box-shadow:inset 0 0 0 5px #ead5c9!important}
+.event-card-5 .wedding-carousel-content{padding:48px 32px!important}
+.event-card-5 .wedding-carousel-content h3{color:#78353d!important;font-size:38px!important}
+.event-card-5 .wedding-carousel-time{background:#78353d;color:#fff1df}
+
+/* 7. DINNER — EVENING LUXURY */
+.event-card-6{background:#29251f!important;border:1px solid #c39a55!important;border-radius:5px!important;box-shadow:0 15px 40px #0003!important}
+.event-card-6 .wedding-carousel-content{padding:50px 32px!important}
+.event-card-6 .wedding-carousel-date,.event-card-6 .wedding-carousel-content h3,.event-card-6 .wedding-carousel-content h4{color:#e5c58b!important}
+.event-card-6 .wedding-carousel-content h3{font-size:40px!important}
+.event-card-6 .wedding-carousel-detail,.event-card-6 .wedding-carousel-content p:not(.wedding-carousel-detail){color:#e5d9c8!important}
+.event-card-6 .wedding-carousel-time{background:#b18a4e;color:#211b14}
+.event-card-6 .wedding-carousel-divider{color:#d6b474}
+
+/* 8. BARAAT — FESTIVE ROYAL */
+.event-card-7{background:#edf1f5!important;border:3px solid #9b7848!important;border-radius:45px 5px!important}
+.event-card-7 .wedding-carousel-content{padding:44px 32px!important}
+.event-card-7 .wedding-carousel-content h3{color:#344b65!important;font-size:38px!important}
+.event-card-7 .wedding-carousel-time{background:#354d68;color:#fff}
+
+/* 9. VIDAAI — SOFT ROSE */
+.event-card-8{background:#f9efed!important;border:1px solid #c18d91!important;border-radius:5px 35px!important}
+.event-card-8 .wedding-carousel-content{padding:52px 35px!important}
+.event-card-8 .wedding-carousel-content h3{color:#89565e!important;font-size:40px!important}
+.event-card-8 .wedding-carousel-time{background:#96636b;color:#fff7f2}
+
+@media(max-width:600px){
+  .wedding-carousel-content{padding:30px 18px!important}
+  .wedding-carousel-content h3{font-size:30px!important}
+  .wedding-carousel-content .wedding-carousel-time{font-size:16px;padding:12px 22px}
+  .event-card-0 .wedding-carousel-content,
+  .event-card-1 .wedding-carousel-content,
+  .event-card-2 .wedding-carousel-content,
+  .event-card-3 .wedding-carousel-content,
+  .event-card-4 .wedding-carousel-content,
+  .event-card-5 .wedding-carousel-content,
+  .event-card-6 .wedding-carousel-content,
+  .event-card-7 .wedding-carousel-content,
+  .event-card-8 .wedding-carousel-content{padding:32px 17px!important}
+}
+
+/* UNIFIED IVORY PALETTE — DISTINCT EVENT LAYOUTS AND BORDERS */
+.wedding-carousel-card{
+  background:#fffaf1!important;
+  color:#68452f!important;
+  border:2px solid #c9ad86!important;
+  border-radius:5px!important;
+  box-shadow:0 14px 38px rgba(90,62,35,.10)!important;
+}
+.wedding-carousel-content{
+  background:#fffaf1!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  gap:0!important;
+}
+.wedding-carousel-date{color:#a17b4b!important}
+.wedding-carousel-content h3{color:#68452f!important}
+.wedding-carousel-content h4{color:#87613d!important}
+.wedding-carousel-detail{color:#9b7954!important}
+.wedding-carousel-content p:not(.wedding-carousel-detail){color:#665343!important}
+.wedding-carousel-divider{color:#b18b5b!important}
+.wedding-carousel-content .wedding-carousel-time{
+  position:static!important;
+  background:#805b36!important;
+  color:#fff8e9!important;
+  border:1px solid #b18b5b!important;
+  border-radius:5px!important;
+}
+
+/* 1 — CLASSIC DOUBLE BORDER */
+.event-card-0{border:4px double #b18b5b!important;border-radius:5px!important}
+
+/* 2 — ROUNDED BORDER */
+.event-card-1{border:2px solid #b18b5b!important;border-radius:28px!important}
+
+/* 3 — CORNER ACCENTS */
+.event-card-2{border:1px solid #b18b5b!important;border-radius:4px!important;outline:1px solid #d8c5a8!important;outline-offset:-9px}
+
+/* 4 — INNER FRAME */
+.event-card-3{border:3px solid #c5a477!important;box-shadow:inset 0 0 0 7px #fffaf1,inset 0 0 0 8px #d7bd99!important}
+
+/* 5 — ROYAL DOUBLE LINE */
+.event-card-4{border:5px double #b18b5b!important;border-radius:2px!important}
+
+/* 6 — ORNAMENTAL CORNERS */
+.event-card-5{border:1px solid #b18b5b!important;border-radius:18px 3px!important;box-shadow:inset 0 0 0 5px #fffaf1,inset 0 0 0 6px #d7bd99!important}
+
+/* 7 — TRIPLE LINE */
+.event-card-6{border:3px double #b18b5b!important;border-radius:12px!important}
+
+/* 8 — OFFSET FRAME */
+.event-card-7{border:1px solid #b18b5b!important;outline:2px solid #d7bd99!important;outline-offset:-8px!important}
+
+/* 9 — SOFT OVAL CORNERS */
+.event-card-8{border:2px solid #c5a477!important;border-radius:35px 5px!important}
+
+/* DIFFERENT CONTENT ORDER */
+.event-card-1 .wedding-carousel-divider{order:1}
+.event-card-1 .wedding-carousel-content h3{order:2}
+.event-card-1 .wedding-carousel-date{order:0}
+.event-card-1 .wedding-carousel-time{order:3}
+
+.event-card-2 .wedding-carousel-detail{order:1}
+.event-card-2 .wedding-carousel-time{order:2}
+.event-card-2 .wedding-carousel-divider{order:3}
+
+.event-card-3 .wedding-carousel-time{order:1}
+.event-card-3 .wedding-carousel-detail{order:2}
+.event-card-3 .wedding-carousel-divider{order:3}
+
+.event-card-4 .wedding-carousel-divider{order:1}
+.event-card-4 .wedding-carousel-detail{order:2}
+.event-card-4 .wedding-carousel-time{order:3}
+
+.event-card-5 .wedding-carousel-detail{order:1}
+.event-card-5 .wedding-carousel-divider{order:2}
+.event-card-5 .wedding-carousel-time{order:3}
+
+.event-card-6 .wedding-carousel-time{order:1}
+.event-card-6 .wedding-carousel-divider{order:2}
+.event-card-6 .wedding-carousel-detail{order:3}
+
+.event-card-7 .wedding-carousel-divider{order:1}
+.event-card-7 .wedding-carousel-time{order:2}
+.event-card-7 .wedding-carousel-detail{order:3}
+
+.event-card-8 .wedding-carousel-detail{order:1}
+.event-card-8 .wedding-carousel-time{order:2}
+.event-card-8 .wedding-carousel-divider{order:3}
+
+@media(max-width:600px){
+  .wedding-carousel-card{border-radius:5px!important}
+  .event-card-1,.event-card-8{border-radius:20px 5px!important}
+}
+
+/* FIXED EQUAL DIMENSIONS FOR ALL EVENT CARDS */
+.wedding-event-carousel{
+  align-items:center!important;
+}
+.wedding-carousel-card{
+  box-sizing:border-box!important;
+  width:100%!important;
+  height:620px!important;
+  min-height:620px!important;
+  max-height:620px!important;
+  overflow:hidden!important;
+  display:flex!important;
+  flex-direction:column!important;
+}
+.wedding-carousel-content{
+  box-sizing:border-box!important;
+  width:100%!important;
+  height:100%!important;
+  min-height:0!important;
+  max-height:100%!important;
+  overflow-y:auto!important;
+  justify-content:center!important;
+}
+@media(max-width:600px){
+  .wedding-carousel-card{
+    height:620px!important;
+    min-height:620px!important;
+    max-height:620px!important;
+  }
+  .wedding-carousel-content{
+    height:100%!important;
+    padding:28px 18px!important;
+  }
+}
+
+/* FINAL FIX: COMPACT, READABLE, EQUAL EVENT CARDS */
+.wedding-carousel-card{
+  height:440px!important;
+  min-height:440px!important;
+  max-height:440px!important;
+  background:#fffaf1!important;
+  overflow:hidden!important;
+}
+.wedding-carousel-content{
+  height:100%!important;
+  min-height:0!important;
+  max-height:100%!important;
+  padding:28px 24px!important;
+  overflow-y:auto!important;
+  justify-content:center!important;
+  background:#fffaf1!important;
+}
+.wedding-carousel-card[class*="event-card-"] .wedding-carousel-date{
+  color:#8b633d!important;
+}
+.wedding-carousel-card[class*="event-card-"] .wedding-carousel-content h3{
+  color:#68452f!important;
+}
+.wedding-carousel-card[class*="event-card-"] .wedding-carousel-content h4{
+  color:#805b36!important;
+}
+.wedding-carousel-card[class*="event-card-"] .wedding-carousel-detail{
+  color:#795b40!important;
+}
+.wedding-carousel-card[class*="event-card-"] .wedding-carousel-content p:not(.wedding-carousel-detail){
+  color:#594331!important;
+}
+.wedding-carousel-card[class*="event-card-"] .wedding-carousel-divider{
+  color:#a77b49!important;
+}
+.wedding-carousel-card[class*="event-card-"] .wedding-carousel-time{
+  background:#805b36!important;
+  color:#fff8e9!important;
+}
+@media(max-width:600px){
+  .wedding-carousel-card{
+    height:440px!important;
+    min-height:440px!important;
+    max-height:440px!important;
+  }
+  .wedding-carousel-content{
+    padding:24px 16px!important;
+  }
+}
+
+/* SMALL BOTTOM CAROUSEL ARROWS */
+.wedding-event-carousel{
+  position:relative!important;
+  display:block!important;
+  padding-bottom:48px!important;
+}
+.wedding-carousel-arrow{
+  position:absolute!important;
+  top:auto!important;
+  bottom:0!important;
+  width:30px!important;
+  height:30px!important;
+  min-width:30px!important;
+  border:1px solid #b18b5b!important;
+  border-radius:50%!important;
+  background:#fffaf1!important;
+  color:#805b36!important;
+  font-size:20px!important;
+  line-height:26px!important;
+  padding:0!important;
+}
+.wedding-carousel-arrow:first-child{left:calc(50% - 42px)!important}
+.wedding-carousel-arrow:last-child{right:calc(50% - 42px)!important}
+
+/* CONSISTENT CONTENT ORDER FOR ALL EVENT CARDS */
+.wedding-carousel-content > *{
+  order:0!important;
+}
+.wedding-carousel-content{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+.wedding-carousel-date{order:1!important}
+.wedding-carousel-content h3{order:2!important}
+.wedding-carousel-time{order:3!important}
+.wedding-carousel-detail{order:4!important}
+.wedding-carousel-divider{order:5!important}
+.wedding-carousel-content h4{order:6!important}
+.wedding-carousel-content p:not(.wedding-carousel-detail){order:7!important}
+
+/* CENTER COMPLETE MEHENDI SHLOK */
+.celebration-scene .mehendi-shlok{
+  left:0!important;
+  right:0!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  padding-left:12px!important;
+  padding-right:12px!important;
+  text-align:center!important;
+  transform:none!important;
+}
+.celebration-scene .mehendi-shlok span,
+.celebration-scene .mehendi-shlok p{
+  display:block!important;
+  width:100%!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center!important;
+}

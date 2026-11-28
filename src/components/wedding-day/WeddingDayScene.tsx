@@ -51,10 +51,7 @@ export default function WeddingDayScene() {
 
         <div className="wedding-event-carousel" onTouchStart={(e) => setTouchStart(e.touches[0].clientX)} onTouchEnd={(e) => { if (touchStart === null) return; const distance = e.changedTouches[0].clientX - touchStart; if (Math.abs(distance) > 45) distance < 0 ? next() : previous(); setTouchStart(null); }}>
           <button className="wedding-carousel-arrow" type="button" onClick={previous} aria-label="Previous event">‹</button>
-          <motion.article key={event.name} className="wedding-carousel-card" initial={{ opacity: 0, x: 35 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.35 }}>
-            <div className="wedding-carousel-image">
-              <img src={event.image} alt={event.name} loading="lazy" decoding="async" />
-            </div>
+          <motion.article key={event.name} className={`wedding-carousel-card event-card-${active}`} initial={{ opacity: 0, x: 35 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.35 }}>
             <div className="wedding-carousel-content">
               <span className="wedding-carousel-date">02 FEBRUARY 2027</span>
               <h3>{event.name}</h3>
@@ -62,7 +59,17 @@ export default function WeddingDayScene() {
               <p className="wedding-carousel-detail">{event.detail}</p>
               <div className="wedding-carousel-divider">❧ ✧ ❧</div>
               <h4>You're Invited</h4>
-              <p>{event.detail}. Join us with your family and bless Tanu and Kapil on this special occasion.</p>
+              <p>{({
+  "Shri Ganesh Nimantran": "वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥",
+  "Sakdi Bindayak": "शुभ एवं मंगलमय बिंदायक की पावन रस्म में सपरिवार पधारकर नवयुगल को अपना स्नेह और आशीर्वाद प्रदान करें।",
+  "Breakfast": "उत्सव की इस खुशनुमा सुबह में हमारे साथ पधारें और अपनों के संग नाश्ते का आनंद लें।",
+  "Haldi Ceremony": "हल्दी की शुभ रस्म में रंग, उमंग और मंगल गीतों के बीच Tanu और Kapil को अपने प्रेम और आशीर्वाद से सराबोर करें।",
+  "Lunch": "पारंपरिक राजस्थानी आतिथ्य और परिवार के स्नेह के साथ आयोजित इस पंगत में सपरिवार पधारकर भोजन का आनंद लें।",
+  "Bhaat Ceremony": "मायके के स्नेह, मामा पक्ष के मान-सम्मान और आशीर्वाद से सजी इस पारिवारिक परंपरा में सम्मिलित होकर समारोह की शोभा बढ़ाएँ।",
+  "Dinner": "स्नेह, स्वाद और उत्सव की रोशनी से सजी इस खूबसूरत शाम में हमारे साथ पधारकर रात्रिभोज का आनंद लें।",
+  "Welcome of Baraat": "ढोल-नगाड़ों की गूंज, मंगल गीतों और शाही स्वागत के साथ बारात के आगमन पर सपरिवार पधारें।",
+  "Vidaai": "अपनों की यादों, प्रेम और शुभकामनाओं के साथ Tanu और Kapil की नई जीवन-यात्रा के लिए अपना आशीर्वाद प्रदान करें।"
+})[event.name]}</p>
             </div>
           </motion.article>
           <button className="wedding-carousel-arrow" type="button" onClick={next} aria-label="Next event">›</button>

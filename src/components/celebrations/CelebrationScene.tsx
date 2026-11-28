@@ -11,7 +11,7 @@ export default function CelebrationScene() {
           className="celebration-intro"
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
           <span className="celebration-eyebrow">॥ मंगलमय आयोजन ॥</span>
@@ -27,7 +27,7 @@ export default function CelebrationScene() {
           className="mehendi-feature"
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
           <span className="mehendi-cone mehendi-cone-left" aria-hidden="true" />
@@ -58,6 +58,8 @@ export default function CelebrationScene() {
             <img
               src="/mehendi-ceremony.jpg"
               alt="Traditional Mehendi ceremony with floral swing and bride"
+              loading="lazy"
+              decoding="async"
             />
             <div className="mehendi-shlok">
               <span>॥ श्री गौरी नमः ॥</span>
