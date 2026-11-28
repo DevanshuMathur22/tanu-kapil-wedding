@@ -3,13 +3,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 
-const petals = Array.from({ length: 30 }, (_, i) => ({
-  id: i,
-  left: `${(i * 37 + 9) % 100}%`,
-  delay: (i % 10) * 0.8,
-  duration: 9 + (i % 6) * 1.5,
-  size: 7 + (i % 4) * 3,
-}));
 
 const weddingTimestamp = new Date("2027-02-02T00:00:00+05:30").getTime();
 
@@ -43,28 +36,6 @@ export default function InvitationReveal() {
       <div className="wedding-grain" />
       <div className="wedding-aura" />
 
-      <div className="wedding-petals">
-        {petals.map((p) => (
-          <motion.span
-            key={p.id}
-            className={`wedding-petal petal-${p.id % 3}`}
-            style={{ left: p.left, width: p.size, height: p.size * 1.6 }}
-            initial={{ y: "-10vh", opacity: 0 }}
-            animate={{
-              y: "110vh",
-              x: [0, 25, -20, 15, 0],
-              rotate: [0, 180, 360],
-              opacity: [0, 0.9, 0.8, 0],
-            }}
-            transition={{
-              duration: p.duration,
-              delay: p.delay,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          />
-        ))}
-      </div>
 
       <div className="wedding-corner wedding-corner-tl">✧</div>
       <div className="wedding-corner wedding-corner-tr">✧</div>
@@ -76,7 +47,7 @@ export default function InvitationReveal() {
           className="wedding-top-floral"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 1.5 }}
         >
           ❀　✿　❀　✿　❀
@@ -86,7 +57,7 @@ export default function InvitationReveal() {
           className="wedding-heading"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 1.3 }}
         >
           <span>✧ A NEW BEGINNING ✧</span>
@@ -98,7 +69,7 @@ export default function InvitationReveal() {
           className="wedding-mandap-decoration"
           initial={{ opacity: 0, scale: 0.85 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 1.8, delay: 0.3 }}
         >
           <div className="mandap-arch">
@@ -114,7 +85,7 @@ export default function InvitationReveal() {
           className="wedding-names"
           initial={{ opacity: 0, y: 35, filter: "blur(12px)" }}
           whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ delay: 0.6, duration: 1.6 }}
         >
           <span>THE WEDDING OF</span>
@@ -128,7 +99,7 @@ export default function InvitationReveal() {
           className={`wedding-countdown combined-date-reveal ${dateRevealed ? "revealed" : ""}`}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ delay: 1, duration: 1.2 }}
         >
           <div className="combined-date-content">
@@ -161,7 +132,7 @@ export default function InvitationReveal() {
           className="wedding-details"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ delay: 1.1, duration: 1.3 }}
         >
           <p className="wedding-message">
@@ -177,7 +148,7 @@ export default function InvitationReveal() {
           className="wedding-bottom"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ delay: 1.5 }}
         >
           <span>LET THE CELEBRATION BEGIN</span>
